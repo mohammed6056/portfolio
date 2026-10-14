@@ -376,6 +376,67 @@
     .hero-wrap {
       max-width: 920px;
     }
+    .hero-author-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.35rem 0.85rem 0.35rem 0.35rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+      font-size: 0.82rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: border-color var(--transition), background var(--transition);
+      cursor: pointer;
+    }
+    .hero-author-pill:hover {
+      border-color: var(--color-accent);
+      background: #FFFFFF;
+    }
+    .author-mini-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 15%;
+      border: 1.5px solid var(--color-accent);
+      display: block;
+    }
+    .author-pill-name {
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+    .author-pill-divider {
+      color: var(--color-stone-dark);
+    }
+    .author-pill-role {
+      color: var(--color-charcoal-muted);
+      font-size: 0.78rem;
+    }
+    .author-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(255, 90, 31, 0.12);
+      color: var(--color-accent);
+      padding: 0.15rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .badge-dot-live {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+    @media (max-width: 640px) {
+      .author-pill-role, .author-pill-divider {
+        display: none;
+      }
+    }
     .hero-title {
       font-family: var(--font-heading);
       font-size: clamp(2.3rem, 4.2vw, 3.4rem);
@@ -1118,99 +1179,472 @@
     }
 
     /* ==========================================================================
-       07 PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL
+       07 PROCESS: INTERACTIVE WORKFLOW CONSOLE & ROADMAP
        ========================================================================== */
-    .process-track-horizontal {
+    .process-workflow-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .process-stepper-track {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
+      gap: 0.5rem;
+      border-bottom: 2px solid var(--color-stone);
+      padding-bottom: 0.85rem;
+    }
+    @media (max-width: 900px) {
+      .process-stepper-track {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+    .process-step-tab {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.65rem 0.85rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      color: var(--color-charcoal);
+      transition: all var(--transition);
       position: relative;
-      gap: 1.5rem;
-      border-top: 2px solid var(--color-primary);
-      padding-top: 1.5rem;
+    }
+    .process-step-tab:hover {
+      border-color: var(--color-primary);
+      background: #FFFFFF;
+    }
+    .process-step-tab.active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #FFFFFF;
+    }
+    .step-tab-num {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      background: rgba(255, 90, 31, 0.12);
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+    }
+    .process-step-tab.active .step-tab-num {
+      background: #FFFFFF;
+      color: var(--color-primary);
+    }
+    .step-tab-label {
+      font-size: 0.825rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    /* Process Spotlight Stage Card */
+    .process-spotlight-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 2.25rem;
+      align-items: start;
+      position: relative;
+      border-top: 3px solid var(--color-accent);
     }
     @media (max-width: 860px) {
-      .process-track-horizontal {
+      .process-spotlight-card {
         grid-template-columns: 1fr;
-        border-top: none;
-        border-left: 2px solid var(--color-primary);
-        padding-top: 0;
-        padding-left: 1.5rem;
+        padding: 1.35rem;
         gap: 1.5rem;
       }
     }
-    .process-node {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-    .node-number {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
+    .stage-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--color-primary);
+      color: #FFFFFF;
+      font-size: 0.72rem;
       font-weight: 700;
-      color: var(--color-accent);
-      margin-bottom: 0.5rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-sm);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
     }
-    .node-title {
+    .stage-badge-pill .pill-accent {
+      color: var(--color-accent);
+    }
+    .stage-spotlight-title {
       font-family: var(--font-heading);
-      font-size: 1.1rem;
+      font-size: 1.55rem;
       font-weight: 700;
       color: var(--color-primary);
-      margin-bottom: 0.35rem;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
     }
-    .node-text {
-      font-size: 0.825rem;
+    .stage-spotlight-desc {
+      font-size: 0.925rem;
       color: var(--color-charcoal);
-      line-height: 1.5;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .stage-checklist-wrap {
+      border-top: 1px solid var(--color-stone);
+      padding-top: 1.15rem;
+    }
+    .stage-checklist-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      color: var(--color-charcoal-muted);
+      margin-bottom: 0.65rem;
+    }
+    .stage-checklist-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .stage-checklist-items li {
+      font-size: 0.85rem;
+      color: var(--color-charcoal);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      line-height: 1.45;
+    }
+    .stage-checklist-items li::before {
+      content: "✓";
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    /* Stage right side: Tools and controls */
+    .stage-side-panel {
+      background: var(--bg-surface-alt);
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-sm);
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .stage-tool-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      color: var(--color-charcoal-muted);
+      margin-bottom: 0.45rem;
+    }
+    .stage-tool-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .stage-tool-chip {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.55rem;
+      border-radius: var(--radius-sm);
+      background: #FFFFFF;
+      border: 1px solid var(--color-stone);
+      color: var(--color-primary);
+    }
+    .stage-nav-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--color-stone);
+    }
+    .stage-nav-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--color-stone);
+      color: var(--color-primary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all var(--transition);
+    }
+    .stage-nav-btn:hover:not(:disabled) {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+    .stage-nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .stage-nav-btn.primary-nav {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+      color: #FFFFFF;
+    }
+    .stage-nav-btn.primary-nav:hover:not(:disabled) {
+      background: var(--color-accent-hover);
+      border-color: var(--color-accent-hover);
+      color: #FFFFFF;
+    }
+
+    /* 5-Stage quick roadmap strip */
+    .process-roadmap-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.75rem;
+    }
+    @media (max-width: 860px) {
+      .process-roadmap-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 520px) {
+      .process-roadmap-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+    .roadmap-node-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .roadmap-node-card:hover {
+      border-color: var(--color-accent);
+      background: #FFFFFF;
+    }
+    .roadmap-node-card.active {
+      border-color: var(--color-primary);
+      background: #FFFFFF;
+      border-left: 3px solid var(--color-accent);
+    }
+    .roadmap-node-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.725rem;
+    }
+    .roadmap-node-num {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+    .roadmap-node-time {
+      color: var(--color-charcoal-muted);
+      font-size: 0.7rem;
+    }
+    .roadmap-node-title {
+      font-family: var(--font-heading);
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      line-height: 1.25;
+    }
+    .roadmap-node-focus {
+      font-size: 0.75rem;
+      color: var(--color-charcoal);
+      line-height: 1.35;
     }
 
     /* ==========================================================================
-       08 ABOUT & 09 CONTACT: CLEAN EDITORIAL
+       08 ABOUT: SPOTLIGHT PORTRAIT SHOWCASE & INTERACTIVE BIO
        ========================================================================== */
     .about-editorial-wrap {
       display: grid;
-      grid-template-columns: 240px 1fr;
-      gap: 2.5rem;
-      align-items: center;
+      grid-template-columns: 360px 1fr;
+      gap: 3rem;
+      align-items: start;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .about-editorial-wrap {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
       }
     }
-    .about-avatar-box {
+    .portrait-showcase-card {
       border: 1px solid var(--color-stone);
       background: var(--bg-surface);
-      padding: 0.75rem;
       border-radius: var(--radius-md);
-      text-align: center;
+      padding: 1rem;
+      position: relative;
+      transition: border-color var(--transition);
     }
-    .about-avatar-box img {
+    .portrait-showcase-card:hover {
+      border-color: var(--color-accent);
+    }
+    .portrait-frame {
+      position: relative;
       width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      object-position: center 20%;
+      aspect-ratio: 4 / 4.6;
       border-radius: var(--radius-sm);
-      display: block;
-      margin-bottom: 0.5rem;
+      overflow: hidden;
+      background: var(--bg-surface-alt);
+      border: 1px solid var(--color-stone);
+      margin-bottom: 0.85rem;
     }
-    .about-avatar-box strong {
-      font-size: 0.9rem;
+    .portrait-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .portrait-showcase-card:hover .portrait-img {
+      transform: scale(1.03);
+    }
+    .portrait-status-pill {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background: var(--color-primary);
+      color: #FFFFFF;
+      font-size: 0.725rem;
+      font-weight: 600;
+      padding: 0.3rem 0.65rem;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: 0.02em;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .status-pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+    .portrait-info {
+      text-align: left;
+      padding: 0.25rem 0.15rem 0.5rem;
+    }
+    .portrait-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
       color: var(--color-primary);
-      display: block;
+      line-height: 1.25;
+      margin-bottom: 0.2rem;
     }
-    .about-avatar-box span {
-      font-size: 0.75rem;
-      color: var(--color-charcoal-muted);
+    .portrait-role {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-bottom: 0.45rem;
+    }
+    .portrait-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 0.85rem;
+    }
+    .portrait-chip {
+      font-size: 0.72rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-alt);
+      border: 1px solid var(--color-stone);
+      color: var(--color-charcoal);
+      font-weight: 500;
+    }
+    .portrait-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .btn-copy-email {
+      background: var(--bg-surface-alt);
+      border: 1px solid var(--color-stone);
+      color: var(--color-primary);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.5rem 0.65rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      transition: all var(--transition);
+      font-family: inherit;
+    }
+    .btn-copy-email:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      background: #FFFFFF;
+    }
+    .btn-copy-email.copied {
+      background: var(--color-accent);
+      color: #FFFFFF;
+      border-color: var(--color-accent);
     }
 
-    .about-editorial-text p {
+    /* About interactive tab buttons */
+    .about-tab-nav {
+      display: flex;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--color-stone);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+      overflow-x: auto;
+    }
+    .about-tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--color-charcoal-muted);
+      font-size: 0.825rem;
+      font-weight: 600;
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition);
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .about-tab-btn:hover {
+      color: var(--color-primary);
+      border-color: var(--color-stone);
+      background: var(--bg-surface);
+    }
+    .about-tab-btn.active {
+      color: var(--color-primary);
+      background: var(--bg-surface);
+      border-color: var(--color-primary);
+    }
+    .about-tab-panel {
+      display: none;
+    }
+    .about-tab-panel.active {
+      display: block;
+    }
+    .about-tab-panel p {
       font-size: 0.95rem;
       line-height: 1.65;
       color: var(--color-charcoal);
       margin-bottom: 0.85rem;
     }
-    .about-editorial-text strong {
+    .about-tab-panel strong {
       color: var(--color-primary);
     }
 
@@ -1453,6 +1887,14 @@
     <section class="hero-section" id="hero">
       <div class="container">
         <div class="hero-wrap">
+          <a href="#about" class="hero-author-pill">
+            <img src="https://i.ibb.co/XfvR4q8z/sohail.webp" alt="Mohammed Sohail Sayyed" class="author-mini-avatar" />
+            <span class="author-pill-name">Mohammed Sohail Sayyed</span>
+            <span class="author-pill-divider">·</span>
+            <span class="author-pill-role">Digital Marketing &amp; SEO Specialist</span>
+            <span class="author-pill-badge"><span class="badge-dot-live"></span> Available for Projects</span>
+          </a>
+
           <h1 class="hero-title">
             Websites, SEO &amp; Digital Marketing Built to <span class="accent-word">Grow Your Business.</span>
           </h1>
@@ -1545,8 +1987,8 @@
               <p>I launch targeted Google and social ad campaigns when you need immediate buyer traffic.</p>
             </div>
             <div class="rail-step">
-              <h4><span class="step-idx">04</span> Real Telemetry &amp; Measurement</h4>
-              <p>I set up measurement tied directly to phone calls, form clicks, and actual business leads.</p>
+              <h4><span class="step-idx">04</span> Lead Capture &amp; Pipeline Automation</h4>
+              <p>I connect form submissions, inbound calls, and CRM workflows (GoHighLevel, Zapier, HubSpot) so every interested prospect is captured and followed up instantly.</p>
             </div>
           </div>
         </div>
@@ -1860,7 +2302,7 @@
                 <li class="slide-tech-item">Fast Mobile Speeds</li>
               </ul>
               <div>
-                <a href="https://vozdvictoria.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <a href="https://vozdvictoria.com/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
                   <span>Visit Website ↗</span>
                 </a>
               </div>
@@ -1895,7 +2337,7 @@
                 <li class="slide-tech-item">Structured Academic Schema</li>
               </ul>
               <div>
-                <a href="https://www.americanacademy.sch.qa/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <a href="https://www.americanacademy.sch.qa/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
                   <span>Visit Website ↗</span>
                 </a>
               </div>
@@ -1930,7 +2372,7 @@
                 <li class="slide-tech-item">Fast Inquiry Options</li>
               </ul>
               <div>
-                <a href="https://www.reliablethermal.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <a href="https://www.reliablethermal.com/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
                   <span>Visit Website ↗</span>
                 </a>
               </div>
@@ -1965,7 +2407,7 @@
                 <li class="slide-tech-item">Clean Visual Branding</li>
               </ul>
               <div>
-                <a href="https://www.sultanchef.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <a href="https://www.sultanchef.com/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
                   <span>Visit Website ↗</span>
                 </a>
               </div>
@@ -2000,7 +2442,7 @@
                 <li class="slide-tech-item">Mobile Card Sharing</li>
               </ul>
               <div>
-                <a href="https://profilelinc.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <a href="https://profilelinc.com/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
                   <span>Visit Platform ↗</span>
                 </a>
               </div>
@@ -2035,7 +2477,7 @@
                 <li class="slide-tech-item">Instant Link Sharing</li>
               </ul>
               <div>
-                <a href="https://profilelinc.com/pfs-overview" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <a href="https://profilelinc.com/pfs-overview" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
                   <span>Open Presentation ↗</span>
                 </a>
               </div>
@@ -2170,88 +2612,240 @@
     </section>
 
     <!-- ========================================================================
-         07 PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL
+         07 PROCESS: INTERACTIVE WORKFLOW CONSOLE & ROADMAP
          ======================================================================== -->
     <section class="section" id="process">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">My Process</h2>
           <p class="section-desc">
-            A disciplined 5-stage workflow from initial audit to ongoing measurement.
+            A transparent 5-stage roadmap from initial technical audit to compounding commercial growth. Select any stage to inspect deliverables and tools.
           </p>
         </div>
 
-        <div class="process-track-horizontal">
-          <div class="process-node">
-            <span class="node-number">01</span>
-            <h3 class="node-title">Research</h3>
-            <p class="node-text">
-              I review your current website, rankings, and competitor gaps to pinpoint where you're losing potential clients.
-            </p>
+        <div class="process-workflow-wrap">
+          <!-- Stepper Track -->
+          <div class="process-stepper-track" role="tablist" aria-label="Process Stages">
+            <button class="process-step-tab active" data-process-step="0" role="tab" aria-selected="true">
+              <span class="step-tab-num">01</span>
+              <span class="step-tab-label">Research &amp; Audit</span>
+            </button>
+            <button class="process-step-tab" data-process-step="1" role="tab" aria-selected="false">
+              <span class="step-tab-num">02</span>
+              <span class="step-tab-label">Funnel Strategy</span>
+            </button>
+            <button class="process-step-tab" data-process-step="2" role="tab" aria-selected="false">
+              <span class="step-tab-num">03</span>
+              <span class="step-tab-label">Custom Build</span>
+            </button>
+            <button class="process-step-tab" data-process-step="3" role="tab" aria-selected="false">
+              <span class="step-tab-num">04</span>
+              <span class="step-tab-label">SEO &amp; Speed</span>
+            </button>
+            <button class="process-step-tab" data-process-step="4" role="tab" aria-selected="false">
+              <span class="step-tab-num">05</span>
+              <span class="step-tab-label">Tracking &amp; Pipeline</span>
+            </button>
           </div>
 
-          <div class="process-node">
-            <span class="node-number">02</span>
-            <h3 class="node-title">Plan</h3>
-            <p class="node-text">
-              I map out the conversion hierarchy, write clear customer-focused text, and select priority search terms.
-            </p>
+          <!-- Featured Spotlight Card -->
+          <div class="process-spotlight-card" id="processSpotlightCard">
+            <div>
+              <div class="stage-badge-pill">
+                <span id="stageBadge">STAGE 01</span>
+                <span>·</span>
+                <span class="pill-accent" id="stageDuration">2–3 DAYS ESTIMATED</span>
+              </div>
+              <h3 class="stage-spotlight-title" id="stageTitle">Deep Research &amp; Opportunity Audit</h3>
+              <p class="stage-spotlight-desc" id="stageDesc">
+                I review your current search visibility, crawl health, and competitor ranking gaps to pinpoint exactly where potential customers are slipping through.
+              </p>
+
+              <div class="stage-checklist-wrap">
+                <div class="stage-checklist-title">Key Concrete Deliverables:</div>
+                <ul class="stage-checklist-items" id="stageDeliverables">
+                  <li>Full technical SEO crawl &amp; Core Web Vitals health check</li>
+                  <li>High-intent commercial keyword matrix (Ahrefs &amp; SEMrush)</li>
+                  <li>Competitor search visibility &amp; backlink gap breakdown</li>
+                  <li>Conversion friction &amp; mobile UX leakage report</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="stage-side-panel">
+              <div>
+                <div class="stage-tool-label">Tools Deployed in This Stage</div>
+                <div class="stage-tool-chips" id="stageTools">
+                  <span class="stage-tool-chip">Ahrefs</span>
+                  <span class="stage-tool-chip">Google Search Console</span>
+                  <span class="stage-tool-chip">SEMrush</span>
+                  <span class="stage-tool-chip">Clarity</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="stage-tool-label">Primary Business Outcome</div>
+                <p id="stageOutcome" style="font-size: 0.85rem; color: var(--color-charcoal); line-height: 1.5;">
+                  A prioritized action checklist based on verified data—not guesswork or agency vanity metrics.
+                </p>
+              </div>
+
+              <div class="stage-nav-controls">
+                <button class="stage-nav-btn" id="prevProcessStageBtn" disabled>
+                  <span>← Previous</span>
+                </button>
+                <button class="stage-nav-btn primary-nav" id="nextProcessStageBtn">
+                  <span>Next Stage →</span>
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div class="process-node">
-            <span class="node-number">03</span>
-            <h3 class="node-title">Build</h3>
-            <p class="node-text">
-              I build fast, responsive pages with clean code and share live preview links for your feedback.
-            </p>
-          </div>
+          <!-- 5-Stage quick roadmap strip -->
+          <div class="process-roadmap-strip" id="processRoadmapStrip">
+            <div class="roadmap-node-card active" data-process-step="0">
+              <div class="roadmap-node-top">
+                <span class="roadmap-node-num">01 · AUDIT</span>
+                <span class="roadmap-node-time">2–3 Days</span>
+              </div>
+              <div class="roadmap-node-title">Research &amp; Audit</div>
+              <div class="roadmap-node-focus">Crawl health, competitor gaps &amp; keyword demand.</div>
+            </div>
 
-          <div class="process-node">
-            <span class="node-number">04</span>
-            <h3 class="node-title">Optimize</h3>
-            <p class="node-text">
-              I test performance across devices, ensuring sub-second load times and frictionless call/form interactions.
-            </p>
-          </div>
+            <div class="roadmap-node-card" data-process-step="1">
+              <div class="roadmap-node-top">
+                <span class="roadmap-node-num">02 · STRATEGY</span>
+                <span class="roadmap-node-time">2–4 Days</span>
+              </div>
+              <div class="roadmap-node-title">Funnel Strategy</div>
+              <div class="roadmap-node-focus">Customer copy, page wireframes &amp; conversion path.</div>
+            </div>
 
-          <div class="process-node">
-            <span class="node-number">05</span>
-            <h3 class="node-title">Measure</h3>
-            <p class="node-text">
-              I index pages with Google, track keyword ranking gains, and review verified lead submissions.
-            </p>
+            <div class="roadmap-node-card" data-process-step="2">
+              <div class="roadmap-node-top">
+                <span class="roadmap-node-num">03 · BUILD</span>
+                <span class="roadmap-node-time">1–2 Weeks</span>
+              </div>
+              <div class="roadmap-node-title">Custom Build</div>
+              <div class="roadmap-node-focus">Sub-second responsive code &amp; staging preview.</div>
+            </div>
+
+            <div class="roadmap-node-card" data-process-step="3">
+              <div class="roadmap-node-top">
+                <span class="roadmap-node-num">04 · OPTIMIZE</span>
+                <span class="roadmap-node-time">3–5 Days</span>
+              </div>
+              <div class="roadmap-node-title">SEO &amp; Speed</div>
+              <div class="roadmap-node-focus">Schema markup, Core Web Vitals &amp; local indexing.</div>
+            </div>
+
+            <div class="roadmap-node-card" data-process-step="4">
+              <div class="roadmap-node-top">
+                <span class="roadmap-node-num">05 · MEASURE</span>
+                <span class="roadmap-node-time">Continuous</span>
+              </div>
+              <div class="roadmap-node-title">Tracking &amp; Pipeline</div>
+              <div class="roadmap-node-focus">GA4 event tracking, CRM sync &amp; weekly reporting.</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========================================================================
-         08 ABOUT: EDITORIAL PRESENTATION
+         08 ABOUT: EDITORIAL PRESENTATION & SPOTLIGHT PORTRAIT
          ======================================================================== -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">About Me</h2>
-          <p class="section-desc">Direct collaboration with senior accountability.</p>
+          <p class="section-desc">Direct 1-on-1 collaboration with senior accountability.</p>
         </div>
 
         <div class="about-editorial-wrap">
-          <div class="about-avatar-box">
-            <img src="https://i.ibb.co/YF09PgGg/1758804697286.jpg" alt="Mohammed Sohail Sayyed" loading="lazy" />
-            <strong>Mohammed Sohail Sayyed</strong>
-            <span>Navi Mumbai, India · Remote Global</span>
+          <!-- Spotlight Portrait Showcase -->
+          <div class="portrait-showcase-card">
+            <div class="portrait-frame">
+              <img src="https://i.ibb.co/XfvR4q8z/sohail.webp" alt="Mohammed Sohail Sayyed" class="portrait-img" loading="lazy" />
+              <div class="portrait-status-pill">
+                <span class="status-pulse-dot"></span>
+                <span>Open for Client Projects</span>
+              </div>
+            </div>
+
+            <div class="portrait-info">
+              <h3 class="portrait-name">Mohammed Sohail Sayyed</h3>
+              <div class="portrait-role">Digital Marketing &amp; Technical SEO Specialist</div>
+              <div class="portrait-meta-row">
+                <span class="portrait-chip">📍 Navi Mumbai, India</span>
+                <span class="portrait-chip">🌐 Working Globally</span>
+                <span class="portrait-chip">⚡ 1-on-1 Direct</span>
+              </div>
+            </div>
+
+            <div class="portrait-actions">
+              <button class="btn-copy-email" id="copyEmailBtn" type="button" title="Click to copy email address">
+                <span id="copyEmailText">Copy Email 📋</span>
+              </button>
+              <a href="https://calendar.app.google/uzH9KFj874kFUX9L9" target="_blank" rel="noopener" class="btn btn-accent btn-sm" style="text-align: center; justify-content: center;">
+                <span>Book Call ↗</span>
+              </a>
+            </div>
           </div>
 
+          <!-- Interactive Bio & Philosophy -->
           <div class="about-editorial-text">
-            <p>
-              Hi, I'm Mohammed Sohail Sayyed. I am an independent digital marketing specialist and web consultant based in Navi Mumbai, India, working with clients worldwide.
-            </p>
-            <p>
-              I work directly with founders and business owners who want senior expertise without agency overhead or junior handoffs. Whether I'm writing website code, optimizing your Google rankings, or tuning ad campaigns, every step is handled directly by me with personal accountability.
-            </p>
-            <p style="font-size: 0.88rem; color: var(--color-charcoal-muted);">
-              From search engines like Google and SEMrush to automation tools like Zapier and GoHighLevel, I connect the right tools to build a reliable marketing engine for your business.
-            </p>
+            <div class="about-tab-nav" role="tablist" aria-label="About Sohail">
+              <button class="about-tab-btn active" data-about-tab="story" role="tab" aria-selected="true">
+                Direct Collaboration
+              </button>
+              <button class="about-tab-btn" data-about-tab="philosophy" role="tab" aria-selected="false">
+                Working Philosophy
+              </button>
+              <button class="about-tab-btn" data-about-tab="guarantee" role="tab" aria-selected="false">
+                Accountability Guarantee
+              </button>
+            </div>
+
+            <div class="about-tab-panel active" id="about-panel-story">
+              <p>
+                Hi, I'm <strong>Mohammed Sohail Sayyed</strong>. I am an independent digital marketing specialist and technical web consultant based in Navi Mumbai, India, helping businesses worldwide scale their online presence.
+              </p>
+              <p>
+                I partner directly with founders, marketers, and business owners who want senior-level execution without agency layers or junior delegating. When you hire me, <strong>I personally audit your search presence, design and write your code, calibrate your Google rankings, and optimize your conversion funnels</strong>.
+              </p>
+              <p style="font-size: 0.88rem; color: var(--color-charcoal-muted);">
+                With hands-on proficiency across platforms like WordPress, GoHighLevel, Ahrefs, SEMrush, Google Analytics 4, and Zapier, I build integrated marketing systems where every piece works together to produce real, verifiable revenue.
+              </p>
+            </div>
+
+            <div class="about-tab-panel" id="about-panel-philosophy">
+              <p>
+                <strong>No vanity metrics. No bloated code.</strong> Most marketing fails because websites are treated like passive brochures rather than commercial engines.
+              </p>
+              <p>
+                My philosophy is built on three simple pillars:
+              </p>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.85rem; font-size: 0.925rem;">
+                <li style="display: flex; gap: 0.5rem;"><strong style="color: var(--color-accent);">1. High-Intent Traffic:</strong> Ranking for terms people search when ready to spend money, not broad vanity terms.</li>
+                <li style="display: flex; gap: 0.5rem;"><strong style="color: var(--color-accent);">2. Sub-Second Speed:</strong> Engineering lightweight code that loads immediately on mobile so visitors never bounce.</li>
+                <li style="display: flex; gap: 0.5rem;"><strong style="color: var(--color-accent);">3. Direct Action:</strong> Making contacting your business frictionless through clear WhatsApp, call, and form triggers.</li>
+              </ul>
+            </div>
+
+            <div class="about-tab-panel" id="about-panel-guarantee">
+              <p>
+                <strong>Clear, Direct Communication Within 24 Hours.</strong> When you message me on Slack, WhatsApp, or email, you talk directly to the person doing the work.
+              </p>
+              <p>
+                Every project comes with clear milestones, transparent weekly Search Console tracking, and private staging links. You will always know what is being built, why it matters, and the measurable impact on your bottom line.
+              </p>
+              <div style="margin-top: 1rem;">
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <span>Start a Conversation With Me →</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2592,6 +3186,194 @@
           msgEl.focus();
         }
       }
+    }
+
+    // ==========================================================================
+    // PROCESS INTERACTIVE STAGE CONSOLE
+    // ==========================================================================
+    const processStagesData = [
+      {
+        badge: "STAGE 01",
+        duration: "2–3 DAYS ESTIMATED",
+        title: "Deep Research & Opportunity Audit",
+        desc: "I review your current search visibility, crawl health, and competitor ranking gaps to pinpoint exactly where potential customers are slipping through.",
+        deliverables: [
+          "Full technical SEO crawl & Core Web Vitals health check",
+          "High-intent commercial keyword matrix (Ahrefs & SEMrush)",
+          "Competitor search visibility & backlink gap breakdown",
+          "Conversion friction & mobile UX leakage report"
+        ],
+        tools: ["Ahrefs", "Google Search Console", "SEMrush", "Clarity"],
+        outcome: "A prioritized action checklist based on verified data—not guesswork or agency vanity metrics."
+      },
+      {
+        badge: "STAGE 02",
+        duration: "2–4 DAYS ESTIMATED",
+        title: "Funnel Strategy & Wireframe Planning",
+        desc: "I design the structure of your website and campaign funnels before a single line of code is written, ensuring every headline, call-to-action, and form serves a commercial purpose.",
+        deliverables: [
+          "Complete site map & clear customer journey architecture",
+          "High-converting sales copy & value proposition messaging",
+          "Mobile-first page wireframes engineered for conversions",
+          "URL hierarchy & target keyword mapping"
+        ],
+        tools: ["Figma", "Copy Docs", "Surfer SEO", "Wireframing"],
+        outcome: "A battle-tested blueprint ready for immediate development without costly revision cycles."
+      },
+      {
+        badge: "STAGE 03",
+        duration: "1–2 WEEKS ESTIMATED",
+        title: "Custom Build & Code Implementation",
+        desc: "I engineer custom, responsive websites with lightweight code, clean typography, and zero fluff. Every element is tested to load in under a second on real mobile devices.",
+        deliverables: [
+          "Sub-second loading speeds (Google Speed Score 90+)",
+          "Custom responsive implementation (WordPress, GoHighLevel, Wix, HTML/CSS)",
+          "Interactive contact forms, lead webhooks, and direct call/WhatsApp triggers",
+          "Private live staging preview link for direct client review"
+        ],
+        tools: ["HTML/CSS", "WordPress", "GoHighLevel", "Wix", "Squarespace"],
+        outcome: "A fast, modern website that works flawlessly across all devices and makes contacting you effortless."
+      },
+      {
+        badge: "STAGE 04",
+        duration: "3–5 DAYS ESTIMATED",
+        title: "SEO Optimization & Core Web Vitals",
+        desc: "I calibrate structured data schemas, compress media, eliminate render-blocking scripts, and fine-tune on-page signals so Google indexes and ranks your priority pages immediately.",
+        deliverables: [
+          "JSON-LD structured schema markup (LocalBusiness, Organization, Service)",
+          "Core Web Vitals tuning (LCP < 1.2s, CLS < 0.02)",
+          "Local Google Business Profile citation sync & map pack ranking setup",
+          "Multi-device cross-browser testing across Safari, Chrome, and Firefox"
+        ],
+        tools: ["Google Search Console", "PageSpeed Insights", "Schema Validator", "Clarity"],
+        outcome: "Immediate indexing by search engines with high technical crawl scores and instant mobile load speeds."
+      },
+      {
+        badge: "STAGE 05",
+        duration: "CONTINUOUS & ONGOING",
+        title: "Tracking Setup, Lead Pipeline & Handoff",
+        desc: "No vague promises. I wire up Google Analytics 4, phone call tracking, and CRM automations so you can see the exact source, cost, and outcome of every inbound lead.",
+        deliverables: [
+          "GA4 conversion events tied directly to form submissions & phone calls",
+          "CRM integration via Zapier/GoHighLevel for automated instant follow-ups",
+          "Clean, transparent weekly performance reporting (clicks, ranks, inquiries)",
+          "Complete documentation and video walkthrough handoff for your team"
+        ],
+        tools: ["Google Analytics 4", "Zapier", "GoHighLevel", "HubSpot", "Slack"],
+        outcome: "An automated lead engine that tracks every visitor and converts traffic into measurable business revenue."
+      }
+    ];
+
+    let currentProcessStep = 0;
+    const processStepTabs = document.querySelectorAll('.process-step-tab');
+    const processRoadmapCards = document.querySelectorAll('.roadmap-node-card');
+    const stageBadgeEl = document.getElementById('stageBadge');
+    const stageDurationEl = document.getElementById('stageDuration');
+    const stageTitleEl = document.getElementById('stageTitle');
+    const stageDescEl = document.getElementById('stageDesc');
+    const stageDeliverablesEl = document.getElementById('stageDeliverables');
+    const stageToolsEl = document.getElementById('stageTools');
+    const stageOutcomeEl = document.getElementById('stageOutcome');
+    const prevStageBtn = document.getElementById('prevProcessStageBtn');
+    const nextStageBtn = document.getElementById('nextProcessStageBtn');
+
+    function renderProcessStage(stepIdx) {
+      currentProcessStep = Math.max(0, Math.min(stepIdx, processStagesData.length - 1));
+      const data = processStagesData[currentProcessStep];
+      if (!data) return;
+
+      processStepTabs.forEach((tab, i) => {
+        const isActive = i === currentProcessStep;
+        tab.classList.toggle('active', isActive);
+        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      processRoadmapCards.forEach((card, i) => {
+        card.classList.toggle('active', i === currentProcessStep);
+      });
+
+      if (stageBadgeEl) stageBadgeEl.textContent = data.badge;
+      if (stageDurationEl) stageDurationEl.textContent = data.duration;
+      if (stageTitleEl) stageTitleEl.textContent = data.title;
+      if (stageDescEl) stageDescEl.textContent = data.desc;
+      if (stageDeliverablesEl) {
+        stageDeliverablesEl.innerHTML = data.deliverables.map(item => `<li>${item}</li>`).join('');
+      }
+      if (stageToolsEl) {
+        stageToolsEl.innerHTML = data.tools.map(tool => `<span class="stage-tool-chip">${tool}</span>`).join('');
+      }
+      if (stageOutcomeEl) stageOutcomeEl.textContent = data.outcome;
+
+      if (prevStageBtn) prevStageBtn.disabled = currentProcessStep === 0;
+      if (nextStageBtn) {
+        if (currentProcessStep === processStagesData.length - 1) {
+          nextStageBtn.innerHTML = '<span>Get In Touch →</span>';
+          nextStageBtn.onclick = () => {
+            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+          };
+        } else {
+          nextStageBtn.innerHTML = `<span>Next Stage →</span>`;
+          nextStageBtn.onclick = () => renderProcessStage(currentProcessStep + 1);
+        }
+      }
+    }
+
+    processStepTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const step = parseInt(tab.getAttribute('data-process-step'), 10);
+        renderProcessStage(step);
+      });
+    });
+
+    processRoadmapCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const step = parseInt(card.getAttribute('data-process-step'), 10);
+        renderProcessStage(step);
+      });
+    });
+
+    if (prevStageBtn) {
+      prevStageBtn.addEventListener('click', () => renderProcessStage(currentProcessStep - 1));
+    }
+
+    // ==========================================================================
+    // ABOUT SECTION INTERACTIVE TABS & COPY EMAIL
+    // ==========================================================================
+    const aboutTabButtons = document.querySelectorAll('.about-tab-btn');
+    const aboutPanels = document.querySelectorAll('.about-tab-panel');
+
+    aboutTabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabKey = btn.getAttribute('data-about-tab');
+        aboutTabButtons.forEach(b => {
+          const isActive = b === btn;
+          b.classList.toggle('active', isActive);
+          b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+        aboutPanels.forEach(panel => {
+          const isTarget = panel.getAttribute('id') === `about-panel-${tabKey}`;
+          panel.classList.toggle('active', isTarget);
+        });
+      });
+    });
+
+    // 1-Click Copy Email
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const copyEmailText = document.getElementById('copyEmailText');
+    if (copyEmailBtn && copyEmailText) {
+      copyEmailBtn.addEventListener('click', () => {
+        const email = 'mdsohail6056@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+          copyEmailBtn.classList.add('copied');
+          copyEmailText.textContent = 'Copied to Clipboard ✓';
+          setTimeout(() => {
+            copyEmailBtn.classList.remove('copied');
+            copyEmailText.textContent = 'Copy Email 📋';
+          }, 2400);
+        }).catch(() => {
+          window.location.href = `mailto:${email}`;
+        });
+      });
     }
 
     // Form submit
