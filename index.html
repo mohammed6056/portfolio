@@ -1401,69 +1401,7 @@
       color: #FFFFFF;
     }
 
-    /* 5-Stage quick roadmap strip */
-    .process-roadmap-strip {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 0.75rem;
-    }
-    @media (max-width: 860px) {
-      .process-roadmap-strip {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 520px) {
-      .process-roadmap-strip {
-        grid-template-columns: 1fr;
-      }
-    }
-    .roadmap-node-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--color-stone);
-      border-radius: var(--radius-sm);
-      padding: 0.85rem;
-      cursor: pointer;
-      transition: all var(--transition);
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-    .roadmap-node-card:hover {
-      border-color: var(--color-accent);
-      background: #FFFFFF;
-    }
-    .roadmap-node-card.active {
-      border-color: var(--color-primary);
-      background: #FFFFFF;
-      border-left: 3px solid var(--color-accent);
-    }
-    .roadmap-node-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.725rem;
-    }
-    .roadmap-node-num {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      color: var(--color-accent);
-    }
-    .roadmap-node-time {
-      color: var(--color-charcoal-muted);
-      font-size: 0.7rem;
-    }
-    .roadmap-node-title {
-      font-family: var(--font-heading);
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: var(--color-primary);
-      line-height: 1.25;
-    }
-    .roadmap-node-focus {
-      font-size: 0.75rem;
-      color: var(--color-charcoal);
-      line-height: 1.35;
-    }
+
 
     /* ==========================================================================
        08 ABOUT: SPOTLIGHT PORTRAIT SHOWCASE & INTERACTIVE BIO
@@ -1550,36 +1488,45 @@
       font-size: 0.825rem;
       font-weight: 600;
       color: var(--color-accent);
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.2rem;
     }
     .portrait-meta-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 0.85rem;
+      gap: 0.45rem;
+      align-items: center;
     }
     .portrait-chip {
-      font-size: 0.72rem;
-      padding: 0.2rem 0.5rem;
+      font-size: 0.74rem;
+      padding: 0.25rem 0.55rem;
       border-radius: var(--radius-sm);
       background: var(--bg-surface-alt);
       border: 1px solid var(--color-stone);
       color: var(--color-charcoal);
       font-weight: 500;
     }
-    .portrait-actions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
+    .about-footer-toolbar {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--color-stone);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .about-actions-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
     }
     .btn-copy-email {
       background: var(--bg-surface-alt);
       border: 1px solid var(--color-stone);
       color: var(--color-primary);
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 600;
-      padding: 0.5rem 0.65rem;
+      padding: 0.45rem 0.75rem;
       border-radius: var(--radius-sm);
       cursor: pointer;
       display: inline-flex;
@@ -1598,6 +1545,21 @@
       background: var(--color-accent);
       color: #FFFFFF;
       border-color: var(--color-accent);
+    }
+    @media (max-width: 640px) {
+      .about-footer-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .about-actions-bar {
+        width: 100%;
+      }
+      .about-actions-bar .btn-copy-email,
+      .about-actions-bar .btn {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+      }
     }
 
     /* About interactive tab buttons */
@@ -2700,54 +2662,6 @@
               </div>
             </div>
           </div>
-
-          <!-- 5-Stage quick roadmap strip -->
-          <div class="process-roadmap-strip" id="processRoadmapStrip">
-            <div class="roadmap-node-card active" data-process-step="0">
-              <div class="roadmap-node-top">
-                <span class="roadmap-node-num">01 · AUDIT</span>
-                <span class="roadmap-node-time">2–3 Days</span>
-              </div>
-              <div class="roadmap-node-title">Research &amp; Audit</div>
-              <div class="roadmap-node-focus">Crawl health, competitor gaps &amp; keyword demand.</div>
-            </div>
-
-            <div class="roadmap-node-card" data-process-step="1">
-              <div class="roadmap-node-top">
-                <span class="roadmap-node-num">02 · STRATEGY</span>
-                <span class="roadmap-node-time">2–4 Days</span>
-              </div>
-              <div class="roadmap-node-title">Funnel Strategy</div>
-              <div class="roadmap-node-focus">Customer copy, page wireframes &amp; conversion path.</div>
-            </div>
-
-            <div class="roadmap-node-card" data-process-step="2">
-              <div class="roadmap-node-top">
-                <span class="roadmap-node-num">03 · BUILD</span>
-                <span class="roadmap-node-time">1–2 Weeks</span>
-              </div>
-              <div class="roadmap-node-title">Custom Build</div>
-              <div class="roadmap-node-focus">Sub-second responsive code &amp; staging preview.</div>
-            </div>
-
-            <div class="roadmap-node-card" data-process-step="3">
-              <div class="roadmap-node-top">
-                <span class="roadmap-node-num">04 · OPTIMIZE</span>
-                <span class="roadmap-node-time">3–5 Days</span>
-              </div>
-              <div class="roadmap-node-title">SEO &amp; Speed</div>
-              <div class="roadmap-node-focus">Schema markup, Core Web Vitals &amp; local indexing.</div>
-            </div>
-
-            <div class="roadmap-node-card" data-process-step="4">
-              <div class="roadmap-node-top">
-                <span class="roadmap-node-num">05 · MEASURE</span>
-                <span class="roadmap-node-time">Continuous</span>
-              </div>
-              <div class="roadmap-node-title">Tracking &amp; Pipeline</div>
-              <div class="roadmap-node-focus">GA4 event tracking, CRM sync &amp; weekly reporting.</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -2776,20 +2690,6 @@
             <div class="portrait-info">
               <h3 class="portrait-name">Mohammed Sohail Sayyed</h3>
               <div class="portrait-role">Digital Marketing &amp; Technical SEO Specialist</div>
-              <div class="portrait-meta-row">
-                <span class="portrait-chip">📍 Navi Mumbai, India</span>
-                <span class="portrait-chip">🌐 Working Globally</span>
-                <span class="portrait-chip">⚡ 1-on-1 Direct</span>
-              </div>
-            </div>
-
-            <div class="portrait-actions">
-              <button class="btn-copy-email" id="copyEmailBtn" type="button" title="Click to copy email address">
-                <span id="copyEmailText">Copy Email 📋</span>
-              </button>
-              <a href="https://calendar.app.google/uzH9KFj874kFUX9L9" target="_blank" rel="noopener" class="btn btn-accent btn-sm" style="text-align: center; justify-content: center;">
-                <span>Book Call ↗</span>
-              </a>
             </div>
           </div>
 
@@ -2840,9 +2740,21 @@
               <p>
                 Every project comes with clear milestones, transparent weekly Search Console tracking, and private staging links. You will always know what is being built, why it matters, and the measurable impact on your bottom line.
               </p>
-              <div style="margin-top: 1rem;">
-                <a href="#contact" class="btn btn-primary btn-sm">
-                  <span>Start a Conversation With Me →</span>
+            </div>
+
+            <!-- Balanced Meta Chips & Quick Actions on right side -->
+            <div class="about-footer-toolbar">
+              <div class="portrait-meta-row">
+                <span class="portrait-chip">📍 Navi Mumbai, India</span>
+                <span class="portrait-chip">🌐 Working Globally</span>
+                <span class="portrait-chip">⚡ 1-on-1 Direct</span>
+              </div>
+              <div class="about-actions-bar">
+                <button class="btn-copy-email" id="copyEmailBtn" type="button" title="Click to copy email address">
+                  <span id="copyEmailText">Copy Email 📋</span>
+                </button>
+                <a href="https://calendar.app.google/uzH9KFj874kFUX9L9" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
+                  <span>Book Call ↗</span>
                 </a>
               </div>
             </div>
@@ -3266,7 +3178,6 @@
 
     let currentProcessStep = 0;
     const processStepTabs = document.querySelectorAll('.process-step-tab');
-    const processRoadmapCards = document.querySelectorAll('.roadmap-node-card');
     const stageBadgeEl = document.getElementById('stageBadge');
     const stageDurationEl = document.getElementById('stageDuration');
     const stageTitleEl = document.getElementById('stageTitle');
@@ -3286,10 +3197,6 @@
         const isActive = i === currentProcessStep;
         tab.classList.toggle('active', isActive);
         tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
-      });
-
-      processRoadmapCards.forEach((card, i) => {
-        card.classList.toggle('active', i === currentProcessStep);
       });
 
       if (stageBadgeEl) stageBadgeEl.textContent = data.badge;
@@ -3321,13 +3228,6 @@
     processStepTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const step = parseInt(tab.getAttribute('data-process-step'), 10);
-        renderProcessStage(step);
-      });
-    });
-
-    processRoadmapCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const step = parseInt(card.getAttribute('data-process-step'), 10);
         renderProcessStage(step);
       });
     });
