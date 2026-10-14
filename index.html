@@ -7,10 +7,10 @@
   <meta name="description" content="Portfolio of Mohammed Sohail Sayyed, Digital Marketing Specialist. Documented SEO case studies, website design, PPC campaigns, and conversion optimization." />
   <meta name="author" content="Mohammed Sohail Sayyed" />
   <meta property="og:title" content="Mohammed Sohail Sayyed — Digital Marketing Specialist Portfolio" />
-  <meta property="og:description" content="Websites, SEO, and digital marketing built to grow your business. Documented SEO case studies and campaign metrics." />
+  <meta property="og:description" content="Websites, SEO, and digital marketing built to grow your business. Documented SEO case studies, verified tools, and campaign metrics." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='6' fill='%23244638'/%3E%3Ctext y='68' x='20' font-size='56' font-family='sans-serif' font-weight='800' fill='%23F4F1E7'%3EMS%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='6' fill='%230F172A'/%3E%3Ctext y='68' x='20' font-size='56' font-family='sans-serif' font-weight='800' fill='%23FF5A1F'%3EMS%3C/text%3E%3C/svg%3E" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,33 +30,49 @@
       "Website Design & Development",
       "Pay-Per-Click Advertising (PPC)",
       "Social Media Management",
-      "Conversion Rate Optimization"
+      "Conversion Rate Optimization",
+      "GoHighLevel",
+      "WordPress",
+      "Ahrefs",
+      "SEMrush",
+      "Google Analytics 4",
+      "Microsoft Clarity",
+      "Zapier",
+      "HubSpot"
     ]
   }
   </script>
 
   <style>
     /* ==========================================================================
-       USER PALETTE (NATURAL CREAM, FOREST GREEN, SOFT OLIVE, STONE BEIGE, DEEP MOSS)
-       DIVERSE EDITORIAL LAYOUTS (NOT REPETITIVE GRIDS), NO SHADOWS, NO GLASSMORPHISM
+       MODERN DUAL-TONE EDITORIAL PALETTE
+       Natural Cream (Canvas background):    #F4F1E7
+       Deep Midnight Slate (Headings/Hero):  #0F172A
+       Vibrant Accent (Highlights/Active):   #FF5A1F
+       Stone Beige (Dividers & borders):     #D6CDBA
+       Deep Slate Charcoal (Body typography): #2D3748
+       STRICT: NO SHADOWS, NO GLASSMORPHISM, ZERO SLOP
        ========================================================================== */
     :root {
       --bg-cream: #F4F1E7;
       --bg-surface: #FAF8F2;
       --bg-surface-alt: #EFECE1;
       
-      --color-forest: #244638;
-      --color-forest-hover: #193327;
+      /* Primary Contrast Color: Deep Midnight Slate */
+      --color-primary: #0F172A;
+      --color-primary-hover: #1E293B;
       
-      --color-olive: #A6AF83;
-      --color-olive-dark: #626c45;
-      --color-olive-tint: rgba(166, 175, 131, 0.22);
+      /* Vibrant Accent: #FF5A1F */
+      --color-accent: #FF5A1F;
+      --color-accent-hover: #e04b15;
+      --color-accent-tint: rgba(255, 90, 31, 0.12);
+      --color-accent-border: rgba(255, 90, 31, 0.35);
       
       --color-stone: #D6CDBA;
       --color-stone-dark: #b5a890;
       
-      --color-charcoal: #343B35;
-      --color-charcoal-muted: #5d665f;
+      --color-charcoal: #2D3748;
+      --color-charcoal-muted: #64748B;
 
       --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -114,7 +130,7 @@
       left: 0;
       height: 3px;
       width: 0%;
-      background: var(--color-forest);
+      background: var(--color-accent);
       z-index: 1000;
       transition: width 0.08s ease-out;
     }
@@ -166,7 +182,7 @@
       font-weight: 700;
       font-size: 1.05rem;
       letter-spacing: -0.02em;
-      color: var(--color-forest);
+      color: var(--color-primary);
     }
     .brand-mark {
       display: inline-flex;
@@ -174,17 +190,17 @@
       justify-content: center;
       width: 32px;
       height: 32px;
-      background: var(--color-forest);
+      background: var(--color-primary);
       font-size: 0.85rem;
       font-weight: 700;
-      color: var(--bg-cream);
+      color: var(--color-accent);
       border-radius: var(--radius-sm);
     }
 
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.35rem;
       list-style: none;
     }
     .nav-link {
@@ -197,7 +213,7 @@
     }
     .nav-link:hover,
     .nav-link.active {
-      color: var(--color-forest);
+      color: var(--color-accent);
     }
     .nav-link.active::after {
       content: '';
@@ -206,7 +222,7 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background: var(--color-forest);
+      background: var(--color-accent);
     }
 
     .nav-actions {
@@ -239,21 +255,30 @@
       font-size: 0.925rem;
     }
     .btn-primary {
-      background: var(--color-forest);
+      background: var(--color-primary);
       color: var(--bg-cream);
-      border-color: var(--color-forest);
+      border-color: var(--color-primary);
     }
     .btn-primary:hover {
-      background: var(--color-forest-hover);
-      border-color: var(--color-forest-hover);
+      background: var(--color-primary-hover);
+      border-color: var(--color-primary-hover);
+    }
+    .btn-accent {
+      background: var(--color-accent);
+      color: #FFFFFF;
+      border-color: var(--color-accent);
+    }
+    .btn-accent:hover {
+      background: var(--color-accent-hover);
+      border-color: var(--color-accent-hover);
     }
     .btn-outline {
       background: transparent;
-      color: var(--color-forest);
-      border-color: var(--color-forest);
+      color: var(--color-primary);
+      border-color: var(--color-primary);
     }
     .btn-outline:hover {
-      background: var(--color-forest);
+      background: var(--color-primary);
       color: var(--bg-cream);
     }
 
@@ -273,7 +298,7 @@
     .mobile-toggle span {
       width: 100%;
       height: 2px;
-      background: var(--color-forest);
+      background: var(--color-primary);
       transition: var(--transition);
     }
     .mobile-toggle.open span:nth-child(1) {
@@ -310,11 +335,11 @@
       border-bottom: 1px solid var(--color-stone);
     }
     .mobile-drawer a:hover {
-      color: var(--color-forest);
+      color: var(--color-accent);
     }
 
     /* ==========================================================================
-       SECTION BASE: COMPACT VIEWPORT PRESENCE & ZERO EYEBROW TEXTS
+       SECTION BASE
        ========================================================================== */
     .section {
       padding: 60px 0;
@@ -332,7 +357,7 @@
       line-height: 1.2;
       letter-spacing: -0.025em;
       margin-bottom: 0.4rem;
-      color: var(--color-forest);
+      color: var(--color-primary);
     }
     .section-desc {
       font-size: 0.95rem;
@@ -341,7 +366,7 @@
     }
 
     /* ==========================================================================
-       01 HERO: BOLD TYPOGRAPHY + HORIZONTAL DIVIDED PROOF STRIP (NO BOXES)
+       01 HERO: EDITORIAL TYPOGRAPHY + HORIZONTAL DIVIDED PROOF STRIP
        ========================================================================== */
     .hero-section {
       padding: 105px 0 50px;
@@ -358,7 +383,10 @@
       line-height: 1.15;
       letter-spacing: -0.03em;
       margin-bottom: 1.15rem;
-      color: var(--color-forest);
+      color: var(--color-primary);
+    }
+    .hero-title .accent-word {
+      color: var(--color-accent);
     }
     .hero-subtitle {
       font-size: clamp(1.05rem, 1.35vw, 1.15rem);
@@ -375,7 +403,7 @@
       margin-bottom: 2.5rem;
     }
 
-    /* Horizontal Ruled Proof Strip (Unboxed, purely typographic with hairlines) */
+    /* Horizontal Ruled Proof Strip with #FF5A1F accent line */
     .hero-proof-strip {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -393,15 +421,18 @@
       display: flex;
       flex-direction: column;
       gap: 0.15rem;
-      border-left: 2px solid var(--color-forest);
+      border-left: 2px solid var(--color-accent);
       padding-left: 0.85rem;
     }
     .proof-stat-num {
       font-family: var(--font-heading);
       font-size: 1.5rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
       line-height: 1.1;
+    }
+    .proof-stat-num .num-accent {
+      color: var(--color-accent);
     }
     .proof-stat-label {
       font-size: 0.8rem;
@@ -430,10 +461,10 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--color-forest);
+      color: var(--color-primary);
     }
     .ticker-inner span.dot {
-      color: var(--color-olive-dark);
+      color: var(--color-accent);
     }
     @keyframes tickerScroll {
       0% { transform: translateX(0); }
@@ -461,10 +492,9 @@
       margin-bottom: 1rem;
     }
     .overview-lead strong {
-      color: var(--color-forest);
+      color: var(--color-primary);
     }
 
-    /* Architectural progressive timeline rail (Zero cards, clean lines) */
     .pipeline-rail {
       display: flex;
       flex-direction: column;
@@ -483,13 +513,13 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: var(--color-forest);
+      background: var(--color-accent);
       border: 2px solid var(--bg-cream);
     }
     .rail-step h4 {
       font-size: 1rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
       margin-bottom: 0.2rem;
       display: flex;
       align-items: baseline;
@@ -497,8 +527,9 @@
     }
     .rail-step h4 span.step-idx {
       font-size: 0.75rem;
-      color: var(--color-olive-dark);
+      color: var(--color-accent);
       font-family: var(--font-heading);
+      font-weight: 700;
     }
     .rail-step p {
       font-size: 0.88rem;
@@ -507,7 +538,7 @@
     }
 
     /* ==========================================================================
-       03 SERVICES: INTERACTIVE SPLIT SERVICE BROWSER (NO REPETITIVE BOXES)
+       03 SERVICES: INTERACTIVE SPLIT SERVICE BROWSER
        ========================================================================== */
     .services-browser {
       display: grid;
@@ -522,7 +553,6 @@
       }
     }
 
-    /* Left: List of 5 services with active underline & indicators */
     .services-index-list {
       display: flex;
       flex-direction: column;
@@ -546,25 +576,25 @@
     }
     .service-index-btn:hover {
       background: #FFFFFF;
-      border-color: var(--color-forest);
-      color: var(--color-forest);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
     }
     .service-index-btn.active {
-      background: var(--color-forest);
+      background: var(--color-primary);
       color: var(--bg-cream);
-      border-color: var(--color-forest);
+      border-color: var(--color-primary);
     }
     .service-index-btn .btn-arrow {
       font-size: 0.85rem;
-      opacity: 0.6;
+      color: var(--color-accent);
+      font-weight: 700;
     }
     .service-index-btn.active .btn-arrow {
-      opacity: 1;
+      color: var(--color-accent);
     }
 
-    /* Right: Service Detail Spotlight Panel */
     .service-spotlight-stage {
-      border: 2px solid var(--color-forest);
+      border: 2px solid var(--color-primary);
       background: var(--bg-surface);
       padding: 2rem;
       border-radius: var(--radius-md);
@@ -577,7 +607,7 @@
       font-family: var(--font-heading);
       font-size: 1.5rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
       margin-bottom: 0.65rem;
       line-height: 1.25;
     }
@@ -603,7 +633,7 @@
     }
     .spotlight-checklist li::before {
       content: '✓';
-      color: var(--color-forest);
+      color: var(--color-accent);
       font-weight: 700;
     }
     .spotlight-bottom {
@@ -617,7 +647,7 @@
     }
 
     /* ==========================================================================
-       05 RESULTS: EDITORIAL CASE STUDY WITH GOOGLE SERP SIMULATION (NO CARDS)
+       05 RESULTS: EDITORIAL CASE STUDY WITH GOOGLE SERP SIMULATION
        ========================================================================== */
     .results-nav {
       display: flex;
@@ -640,11 +670,11 @@
       transition: color var(--transition), border-color var(--transition);
     }
     .results-tab-btn:hover {
-      color: var(--color-forest);
+      color: var(--color-accent);
     }
     .results-tab-btn.active {
-      color: var(--color-forest);
-      border-bottom-color: var(--color-forest);
+      color: var(--color-primary);
+      border-bottom-color: var(--color-accent);
     }
 
     .case-stage-panel {
@@ -654,7 +684,6 @@
       display: block;
     }
 
-    /* Distinct Metric Ribbon (Flat, minimal hairlines) */
     .case-metric-ribbon {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -678,7 +707,7 @@
       font-family: var(--font-heading);
       font-size: 1.85rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
       line-height: 1.1;
     }
     .ribbon-label {
@@ -691,7 +720,6 @@
       color: var(--color-charcoal-muted);
     }
 
-    /* Magazine-style split: Narrative on left, SERP ranking mockup on right */
     .case-magazine-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
@@ -708,7 +736,7 @@
     .case-narrative h4 {
       font-size: 1rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
       margin-bottom: 0.35rem;
     }
     .case-narrative p {
@@ -718,7 +746,7 @@
       margin-bottom: 1.25rem;
     }
     .case-impact-rule {
-      border-left: 3px solid var(--color-forest);
+      border-left: 3px solid var(--color-accent);
       background: var(--bg-surface);
       padding: 0.85rem 1rem;
       font-size: 0.85rem;
@@ -726,7 +754,6 @@
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     }
 
-    /* Clean Google Search Mockup Box (Visually distinct from any grid) */
     .serp-simulation-card {
       border: 1px solid var(--color-stone);
       background: #FFFFFF;
@@ -744,9 +771,13 @@
       display: flex;
       justify-content: space-between;
     }
+    .serp-header span:last-child {
+      color: var(--color-accent);
+      font-weight: 700;
+    }
     .serp-url {
       font-size: 0.75rem;
-      color: var(--color-forest);
+      color: var(--color-primary);
       display: flex;
       align-items: center;
       gap: 0.35rem;
@@ -755,7 +786,7 @@
     .serp-title {
       font-size: 1.05rem;
       font-weight: 600;
-      color: #1a0dab; /* Authentic Search Blue */
+      color: #1a0dab;
       line-height: 1.3;
       margin-bottom: 0.25rem;
     }
@@ -781,8 +812,9 @@
     .serp-rank-pill {
       font-family: var(--font-heading);
       font-weight: 700;
-      color: var(--color-forest);
-      background: var(--color-olive-tint);
+      color: var(--color-accent);
+      background: var(--color-accent-tint);
+      border: 1px solid var(--color-accent-border);
       padding: 1px 6px;
       border-radius: 3px;
     }
@@ -806,7 +838,7 @@
       font-family: var(--font-heading);
       font-size: 0.9rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
     }
     .slider-btn-group {
       display: flex;
@@ -817,7 +849,7 @@
       height: 36px;
       background: var(--bg-surface);
       border: 1px solid var(--color-stone);
-      color: var(--color-forest);
+      color: var(--color-primary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -827,8 +859,8 @@
       transition: background var(--transition), border-color var(--transition), color var(--transition);
     }
     .slider-btn:hover {
-      background: var(--color-forest);
-      border-color: var(--color-forest);
+      background: var(--color-primary);
+      border-color: var(--color-primary);
       color: var(--bg-cream);
     }
 
@@ -852,7 +884,7 @@
         max-height: 560px;
       }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       .showcase-stage {
         height: 620px;
         min-height: 620px;
@@ -895,7 +927,7 @@
       font-family: var(--font-heading);
       font-size: clamp(1.3rem, 2vw, 1.7rem);
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
       margin-bottom: 0.35rem;
     }
     .slide-role {
@@ -926,7 +958,7 @@
     .slide-tech-item::before {
       content: '■';
       font-size: 0.45rem;
-      color: var(--color-forest);
+      color: var(--color-accent);
     }
 
     .slide-browser-preview {
@@ -1010,31 +1042,97 @@
       border-radius: var(--radius-sm);
     }
     .showcase-pill:hover {
-      color: var(--color-forest);
-      border-color: var(--color-forest);
+      color: var(--color-accent);
+      border-color: var(--color-accent);
     }
     .showcase-pill.active {
-      background: var(--color-forest);
+      background: var(--color-primary);
       color: var(--bg-cream);
-      border-color: var(--color-forest);
+      border-color: var(--color-primary);
     }
 
     /* ==========================================================================
-       07 PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL (NOT BOXED CARDS)
+       TOOLS & TECHNOLOGIES
+       ========================================================================== */
+    .tools-clusters-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .tools-clusters-wrap {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (min-width: 1024px) {
+      .tools-clusters-wrap {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .tool-cluster-card {
+      border: 1px solid var(--color-stone);
+      background: var(--bg-surface);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      transition: border-color var(--transition);
+    }
+    .tool-cluster-card:hover {
+      border-color: var(--color-accent);
+    }
+    .cluster-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .cluster-title-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+    .cluster-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+    .tool-badge-item {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+      background: var(--bg-cream);
+      border: 1px solid var(--color-stone);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      transition: background var(--transition), color var(--transition), border-color var(--transition);
+    }
+    .tool-badge-item:hover {
+      border-color: var(--color-accent);
+      color: var(--color-primary);
+      background: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       07 PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL
        ========================================================================== */
     .process-track-horizontal {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       position: relative;
       gap: 1.5rem;
-      border-top: 2px solid var(--color-forest);
+      border-top: 2px solid var(--color-primary);
       padding-top: 1.5rem;
     }
     @media (max-width: 860px) {
       .process-track-horizontal {
         grid-template-columns: 1fr;
         border-top: none;
-        border-left: 2px solid var(--color-forest);
+        border-left: 2px solid var(--color-primary);
         padding-top: 0;
         padding-left: 1.5rem;
         gap: 1.5rem;
@@ -1047,16 +1145,16 @@
     }
     .node-number {
       font-family: var(--font-heading);
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-accent);
       margin-bottom: 0.5rem;
     }
     .node-title {
       font-family: var(--font-heading);
       font-size: 1.1rem;
       font-weight: 700;
-      color: var(--color-forest);
+      color: var(--color-primary);
       margin-bottom: 0.35rem;
     }
     .node-text {
@@ -1098,7 +1196,7 @@
     }
     .about-avatar-box strong {
       font-size: 0.9rem;
-      color: var(--color-forest);
+      color: var(--color-primary);
       display: block;
     }
     .about-avatar-box span {
@@ -1113,25 +1211,10 @@
       margin-bottom: 0.85rem;
     }
     .about-editorial-text strong {
-      color: var(--color-forest);
-    }
-    .about-tools-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 1rem;
-    }
-    .tool-chip {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--color-forest);
-      background: var(--bg-surface);
-      border: 1px solid var(--color-stone);
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-sm);
+      color: var(--color-primary);
     }
 
-    /* Contact compact split */
+    /* Contact split */
     .contact-split-wrap {
       display: grid;
       grid-template-columns: 1fr 1.25fr;
@@ -1160,7 +1243,7 @@
       transition: border-color var(--transition), background var(--transition);
     }
     .channel-item:hover {
-      border-color: var(--color-forest);
+      border-color: var(--color-accent);
       background: #FFFFFF;
     }
     .channel-item small {
@@ -1172,7 +1255,10 @@
     }
     .channel-item strong {
       font-size: 0.88rem;
-      color: var(--color-forest);
+      color: var(--color-primary);
+    }
+    .channel-item:hover strong {
+      color: var(--color-accent);
     }
 
     .contact-form-box {
@@ -1213,11 +1299,11 @@
       transition: border-color var(--transition);
     }
     .form-field:focus {
-      border-color: var(--color-forest);
+      border-color: var(--color-accent);
     }
     select.form-field {
       appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23244638' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FF5A1F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 0.8rem center;
       padding-right: 2.25rem;
@@ -1234,9 +1320,9 @@
     }
     .form-alert-msg.success {
       display: block;
-      background: var(--color-olive-tint);
-      border-color: var(--color-olive);
-      color: var(--color-forest);
+      background: var(--color-accent-tint);
+      border-color: var(--color-accent-border);
+      color: var(--color-primary);
     }
     .form-alert-msg.error {
       display: block;
@@ -1266,7 +1352,7 @@
       height: 36px;
       background: var(--bg-surface);
       border: 1px solid var(--color-stone);
-      color: var(--color-forest);
+      color: var(--color-primary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1284,9 +1370,9 @@
       visibility: visible;
     }
     .back-to-top:hover {
-      border-color: var(--color-forest);
-      background: var(--color-forest);
-      color: var(--bg-cream);
+      border-color: var(--color-accent);
+      background: var(--color-accent);
+      color: #FFFFFF;
     }
 
     @media (max-width: 860px) {
@@ -1324,6 +1410,7 @@
             <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#results" class="nav-link">Results</a></li>
             <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#tools" class="nav-link">Tools</a></li>
             <li><a href="#process" class="nav-link">Process</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -1352,6 +1439,7 @@
     <a href="#services" class="mobile-nav-item">Services</a>
     <a href="#results" class="mobile-nav-item">Results</a>
     <a href="#work" class="mobile-nav-item">Work</a>
+    <a href="#tools" class="mobile-nav-item">Tools</a>
     <a href="#process" class="mobile-nav-item">Process</a>
     <a href="#about" class="mobile-nav-item">About</a>
     <a href="#contact" class="mobile-nav-item">Contact</a>
@@ -1360,13 +1448,13 @@
 
   <main>
     <!-- ========================================================================
-         HERO: EDITORIAL TYPOGRAPHY + HORIZONTAL DIVIDED PROOF STRIP (NO BOXES)
+         HERO: EDITORIAL TYPOGRAPHY + HORIZONTAL DIVIDED PROOF STRIP
          ======================================================================== -->
     <section class="hero-section" id="hero">
       <div class="container">
         <div class="hero-wrap">
           <h1 class="hero-title">
-            Websites, SEO &amp; Digital Marketing Built to Grow Your Business.
+            Websites, SEO &amp; Digital Marketing Built to <span class="accent-word">Grow Your Business.</span>
           </h1>
 
           <p class="hero-subtitle">
@@ -1374,7 +1462,7 @@
           </p>
 
           <div class="hero-ctas">
-            <a href="#results" class="btn btn-primary btn-lg">
+            <a href="#results" class="btn btn-accent btn-lg">
               <span>View SEO Case Studies</span>
               <span aria-hidden="true">↓</span>
             </a>
@@ -1384,7 +1472,7 @@
             </a>
           </div>
 
-          <!-- Unboxed proof strip with hairlines -->
+          <!-- Unboxed proof strip with #FF5A1F accent line -->
           <div class="hero-proof-strip">
             <div class="proof-stat-item">
               <span class="proof-stat-num">+117% to +378%</span>
@@ -1392,12 +1480,12 @@
               <span class="proof-stat-sub">Verified in Search Console</span>
             </div>
             <div class="proof-stat-item">
-              <span class="proof-stat-num">1.06M+</span>
+              <span class="proof-stat-num">1.06M<span class="num-accent">+</span></span>
               <span class="proof-stat-label">Search Impressions</span>
               <span class="proof-stat-sub">Targeted customer reach</span>
             </div>
             <div class="proof-stat-item">
-              <span class="proof-stat-num">Page 1</span>
+              <span class="proof-stat-num">Page <span class="num-accent">1</span></span>
               <span class="proof-stat-label">Google Rankings</span>
               <span class="proof-stat-sub">High-intent buyer searches</span>
             </div>
@@ -1415,19 +1503,20 @@
     <div class="credentials-ticker" aria-hidden="true">
       <div class="ticker-inner">
         <span>Technical SEO</span> <span class="dot">/</span>
-        <span>Custom Web Design</span> <span class="dot">/</span>
-        <span>Google Search Rankings</span> <span class="dot">/</span>
-        <span>Pay-Per-Click Advertising</span> <span class="dot">/</span>
-        <span>Conversion Optimization</span> <span class="dot">/</span>
-        <span>Social Media Management</span> <span class="dot">/</span>
+        <span>GoHighLevel &amp; WordPress</span> <span class="dot">/</span>
+        <span>Google Search Console</span> <span class="dot">/</span>
+        <span>Ahrefs &amp; SEMrush</span> <span class="dot">/</span>
+        <span>Pay-Per-Click Ads</span> <span class="dot">/</span>
+        <span>Zapier &amp; Automations</span> <span class="dot">/</span>
+        <span>HubSpot &amp; CRM</span> <span class="dot">/</span>
+        <span>Google Analytics 4 &amp; Clarity</span> <span class="dot">/</span>
         <span>Fast Loading Speeds</span> <span class="dot">/</span>
         <span>Technical SEO</span> <span class="dot">/</span>
-        <span>Custom Web Design</span> <span class="dot">/</span>
       </div>
     </div>
 
     <!-- ========================================================================
-         OVERVIEW: PROGRESSIVE TIMELINE RAIL (NOT A BOXED GRID)
+         OVERVIEW: PROGRESSIVE TIMELINE RAIL
          ======================================================================== -->
     <section class="section" id="overview">
       <div class="container">
@@ -1442,7 +1531,6 @@
             </p>
           </div>
 
-          <!-- Continuous architectural rail -->
           <div class="pipeline-rail">
             <div class="rail-step">
               <h4><span class="step-idx">01</span> Search Intent (SEO)</h4>
@@ -1466,7 +1554,7 @@
     </section>
 
     <!-- ========================================================================
-         SERVICES: INTERACTIVE SERVICE BROWSER (NOT REPETITIVE CARDS)
+         SERVICES: INTERACTIVE SERVICE BROWSER
          ======================================================================== -->
     <section class="section" id="services">
       <div class="container">
@@ -1478,7 +1566,6 @@
         </div>
 
         <div class="services-browser">
-          <!-- Left: 5 Service Selector Items -->
           <div class="services-index-list" role="tablist" aria-label="Select Service">
             <button class="service-index-btn active" data-service-idx="0" role="tab" aria-selected="true">
               <span>01. Search Engine Optimization (SEO)</span>
@@ -1502,7 +1589,6 @@
             </button>
           </div>
 
-          <!-- Right: Dynamic Service Spotlight Stage -->
           <div class="service-spotlight-stage" id="serviceSpotlight">
             <div>
               <h3 class="spotlight-title" id="spotlightTitle">Search Engine Optimization (SEO)</h3>
@@ -1518,7 +1604,7 @@
             </div>
             <div class="spotlight-bottom">
               <span style="font-size: 0.8rem; color: var(--color-charcoal-muted);">Direct consultation &amp; milestone execution</span>
-              <button type="button" class="btn btn-primary btn-sm" id="spotlightActionBtn" onclick="selectServiceForContact('Search Engine Optimization (SEO)')">
+              <button type="button" class="btn btn-accent btn-sm" id="spotlightActionBtn" onclick="selectServiceForContact('Search Engine Optimization (SEO)')">
                 <span>Inquire About This Service →</span>
               </button>
             </div>
@@ -1528,7 +1614,7 @@
     </section>
 
     <!-- ========================================================================
-         RESULTS: SEO CASE STUDIES (EDITORIAL SERP PREVIEW, NO CARDS)
+         RESULTS: SEO CASE STUDIES
          ======================================================================== -->
     <section class="section" id="results">
       <div class="container">
@@ -1539,7 +1625,6 @@
           </p>
         </div>
 
-        <!-- Case Study Selector Tabs -->
         <div class="results-nav" role="tablist" aria-label="SEO Case Study Tabs">
           <button class="results-tab-btn active" data-tab="0" role="tab" aria-selected="true" id="tab-res-0">
             Township &amp; Location SEO
@@ -1583,7 +1668,6 @@
               </div>
             </div>
 
-            <!-- Google Search Mockup Box -->
             <div class="serp-simulation-card">
               <div class="serp-header">
                 <span>Google Page 1 Ranking Preview</span>
@@ -1742,7 +1826,7 @@
     </section>
 
     <!-- ========================================================================
-         WORK: WEBSITES SHOWCASE (COMPACT SLIDER STAGE)
+         WORK: WEBSITES SHOWCASE
          ======================================================================== -->
     <section class="section" id="work">
       <div class="container">
@@ -1972,7 +2056,6 @@
           </article>
         </div>
 
-        <!-- Slider Pills Navigation -->
         <div class="showcase-pills-bar" id="showcasePills" role="tablist">
           <button class="showcase-pill active" data-slide="0" role="tab" aria-selected="true">Voz d Victoria</button>
           <button class="showcase-pill" data-slide="1" role="tab" aria-selected="false">American Academy</button>
@@ -1985,7 +2068,109 @@
     </section>
 
     <!-- ========================================================================
-         PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL (NOT BOXED CARDS)
+         TOOLS & TECHNOLOGIES
+         ======================================================================== -->
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Tools &amp; Technologies</h2>
+          <p class="section-desc">
+            The core platforms, SEO suites, analytics tools, and workflow systems I use daily to drive organic growth and execute campaigns.
+          </p>
+        </div>
+
+        <div class="tools-clusters-wrap">
+          <!-- Cluster 1: SEO & Search Growth -->
+          <div class="tool-cluster-card">
+            <div class="cluster-title">
+              <span class="cluster-title-dot"></span>
+              <span>SEO &amp; Search Growth</span>
+            </div>
+            <div class="cluster-chips">
+              <span class="tool-badge-item">Google Search Console</span>
+              <span class="tool-badge-item">Ahrefs</span>
+              <span class="tool-badge-item">SEMrush</span>
+              <span class="tool-badge-item">Surfer SEO</span>
+              <span class="tool-badge-item">Ubersuggest</span>
+            </div>
+          </div>
+
+          <!-- Cluster 2: CMS & Web Platforms -->
+          <div class="tool-cluster-card">
+            <div class="cluster-title">
+              <span class="cluster-title-dot"></span>
+              <span>CMS &amp; Web Platforms</span>
+            </div>
+            <div class="cluster-chips">
+              <span class="tool-badge-item">GoHighLevel</span>
+              <span class="tool-badge-item">WordPress</span>
+              <span class="tool-badge-item">HTML5</span>
+              <span class="tool-badge-item">CSS3</span>
+              <span class="tool-badge-item">Wix</span>
+              <span class="tool-badge-item">Squarespace</span>
+              <span class="tool-badge-item">Kajabi</span>
+            </div>
+          </div>
+
+          <!-- Cluster 3: Analytics & User Tracking -->
+          <div class="tool-cluster-card">
+            <div class="cluster-title">
+              <span class="cluster-title-dot"></span>
+              <span>Analytics &amp; Behavior</span>
+            </div>
+            <div class="cluster-chips">
+              <span class="tool-badge-item">Google Analytics 4</span>
+              <span class="tool-badge-item">Microsoft Clarity</span>
+              <span class="tool-badge-item">Conversion Tracking</span>
+            </div>
+          </div>
+
+          <!-- Cluster 4: Automation & CRM -->
+          <div class="tool-cluster-card">
+            <div class="cluster-title">
+              <span class="cluster-title-dot"></span>
+              <span>Automation &amp; CRM</span>
+            </div>
+            <div class="cluster-chips">
+              <span class="tool-badge-item">Zapier</span>
+              <span class="tool-badge-item">HubSpot</span>
+              <span class="tool-badge-item">Mailchimp</span>
+              <span class="tool-badge-item">Lead Webhooks</span>
+            </div>
+          </div>
+
+          <!-- Cluster 5: Project Management -->
+          <div class="tool-cluster-card">
+            <div class="cluster-title">
+              <span class="cluster-title-dot"></span>
+              <span>Workflow &amp; Collaboration</span>
+            </div>
+            <div class="cluster-chips">
+              <span class="tool-badge-item">Slack</span>
+              <span class="tool-badge-item">Asana</span>
+              <span class="tool-badge-item">Trello</span>
+              <span class="tool-badge-item">Monday.com</span>
+            </div>
+          </div>
+
+          <!-- Cluster 6: Paid & Performance -->
+          <div class="tool-cluster-card">
+            <div class="cluster-title">
+              <span class="cluster-title-dot"></span>
+              <span>Paid Advertising</span>
+            </div>
+            <div class="cluster-chips">
+              <span class="tool-badge-item">Meta Ads (Facebook)</span>
+              <span class="tool-badge-item">Instagram Ads</span>
+              <span class="tool-badge-item">Google Ads</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         07 PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL
          ======================================================================== -->
     <section class="section" id="process">
       <div class="container">
@@ -2041,7 +2226,7 @@
     </section>
 
     <!-- ========================================================================
-         ABOUT: EDITORIAL PRESENTATION (ALL "WE" REPLACED WITH "I")
+         08 ABOUT: EDITORIAL PRESENTATION
          ======================================================================== -->
     <section class="section" id="about">
       <div class="container">
@@ -2064,16 +2249,9 @@
             <p>
               I work directly with founders and business owners who want senior expertise without agency overhead or junior handoffs. Whether I'm writing website code, optimizing your Google rankings, or tuning ad campaigns, every step is handled directly by me with personal accountability.
             </p>
-            <div class="about-tools-row">
-              <span class="tool-chip">Google Search Console</span>
-              <span class="tool-chip">Google Analytics 4</span>
-              <span class="tool-chip">Ahrefs &amp; SEMrush</span>
-              <span class="tool-chip">WordPress</span>
-              <span class="tool-chip">Webflow</span>
-              <span class="tool-chip">GoHighLevel</span>
-              <span class="tool-chip">Meta Ads</span>
-              <span class="tool-chip">Google Ads</span>
-            </div>
+            <p style="font-size: 0.88rem; color: var(--color-charcoal-muted);">
+              From search engines like Google and SEMrush to automation tools like Zapier and GoHighLevel, I connect the right tools to build a reliable marketing engine for your business.
+            </p>
           </div>
         </div>
       </div>
@@ -2150,7 +2328,7 @@
                 <textarea id="senderMessage" rows="3" class="form-field" required placeholder="Briefly describe what you'd like to achieve..."></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitContactBtn">
+              <button type="submit" class="btn btn-accent" style="width: 100%;" id="submitContactBtn">
                 <span>Send Message →</span>
               </button>
 
@@ -2440,7 +2618,7 @@
         alertBox.innerHTML = `
           <strong>Thank you, ${name}!</strong> Your message has been received. I will follow up directly to <strong>${email}</strong> within 24 hours.
           <br>
-          <a href="mailto:mdsohail6056@gmail.com?subject=Inquiry:%20${encodeURIComponent(name)}%20(${encodeURIComponent(service)})&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nService: ' + service + '\n\nMessage:\n' + message)}" style="text-decoration: underline; color: #244638; font-weight: 700;">
+          <a href="mailto:mdsohail6056@gmail.com?subject=Inquiry:%20${encodeURIComponent(name)}%20(${encodeURIComponent(service)})&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nService: ' + service + '\n\nMessage:\n' + message)}" style="text-decoration: underline; color: #0F172A; font-weight: 700;">
             Click here to open directly in your mail app →
           </a>
         `;
