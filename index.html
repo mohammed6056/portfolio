@@ -1,0 +1,2477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Sohail Sayyed — Digital Marketing Specialist Portfolio</title>
+  <meta name="description" content="Portfolio of Mohammed Sohail Sayyed, Digital Marketing Specialist. Documented SEO case studies, website design, PPC campaigns, and conversion optimization." />
+  <meta name="author" content="Mohammed Sohail Sayyed" />
+  <meta property="og:title" content="Mohammed Sohail Sayyed — Digital Marketing Specialist Portfolio" />
+  <meta property="og:description" content="Websites, SEO, and digital marketing built to grow your business. Documented SEO case studies and campaign metrics." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='6' fill='%23244638'/%3E%3Ctext y='68' x='20' font-size='56' font-family='sans-serif' font-weight='800' fill='%23F4F1E7'%3EMS%3C/text%3E%3C/svg%3E" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammed Sohail Sayyed",
+    "jobTitle": "Digital Marketing Specialist & SEO Consultant",
+    "sameAs": [
+      "https://www.linkedin.com/in/mohammed-sohail-sayyed"
+    ],
+    "knowsAbout": [
+      "Search Engine Optimization (SEO)",
+      "Website Design & Development",
+      "Pay-Per-Click Advertising (PPC)",
+      "Social Media Management",
+      "Conversion Rate Optimization"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       USER PALETTE (NATURAL CREAM, FOREST GREEN, SOFT OLIVE, STONE BEIGE, DEEP MOSS)
+       DIVERSE EDITORIAL LAYOUTS (NOT REPETITIVE GRIDS), NO SHADOWS, NO GLASSMORPHISM
+       ========================================================================== */
+    :root {
+      --bg-cream: #F4F1E7;
+      --bg-surface: #FAF8F2;
+      --bg-surface-alt: #EFECE1;
+      
+      --color-forest: #244638;
+      --color-forest-hover: #193327;
+      
+      --color-olive: #A6AF83;
+      --color-olive-dark: #626c45;
+      --color-olive-tint: rgba(166, 175, 131, 0.22);
+      
+      --color-stone: #D6CDBA;
+      --color-stone-dark: #b5a890;
+      
+      --color-charcoal: #343B35;
+      --color-charcoal-muted: #5d665f;
+
+      --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --radius-sm: 4px;
+      --radius-md: 6px;
+      --radius-lg: 8px;
+
+      --container-max: 1160px;
+      --transition: 0.16s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-shadow: none !important;
+      text-shadow: none !important;
+      filter: none !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: light;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--color-charcoal);
+      font-family: var(--font-body);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* Subtle ruled background grid */
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(214, 205, 186, 0.25) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(214, 205, 186, 0.25) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    #scrollProgress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: var(--color-forest);
+      z-index: 1000;
+      transition: width 0.08s ease-out;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition), border-color var(--transition);
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ==========================================================================
+       SITE HEADER: 1-WORD TABS ONLY
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: var(--bg-cream);
+      border-bottom: 1px solid var(--color-stone);
+      transition: border-color var(--transition);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+      color: var(--color-forest);
+    }
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--color-forest);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--bg-cream);
+      border-radius: var(--radius-sm);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    .nav-link {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+      position: relative;
+      padding: 0.4rem 0;
+      transition: color var(--transition);
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--color-forest);
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--color-forest);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.15rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: background var(--transition), color var(--transition), border-color var(--transition);
+      white-space: nowrap;
+    }
+    .btn-sm {
+      padding: 0.4rem 0.85rem;
+      font-size: 0.8rem;
+    }
+    .btn-lg {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.925rem;
+    }
+    .btn-primary {
+      background: var(--color-forest);
+      color: var(--bg-cream);
+      border-color: var(--color-forest);
+    }
+    .btn-primary:hover {
+      background: var(--color-forest-hover);
+      border-color: var(--color-forest-hover);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--color-forest);
+      border-color: var(--color-forest);
+    }
+    .btn-outline:hover {
+      background: var(--color-forest);
+      color: var(--bg-cream);
+    }
+
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 34px;
+      height: 34px;
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      padding: 6px;
+    }
+    .mobile-toggle span {
+      width: 100%;
+      height: 2px;
+      background: var(--color-forest);
+      transition: var(--transition);
+    }
+    .mobile-toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .mobile-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    .mobile-toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .mobile-drawer {
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: var(--bg-cream);
+      border-bottom: 1px solid var(--color-stone);
+      padding: 1.25rem;
+      display: none;
+      flex-direction: column;
+      gap: 0.85rem;
+      z-index: 99;
+    }
+    .mobile-drawer.open {
+      display: flex;
+    }
+    .mobile-drawer a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.4rem 0;
+      color: var(--color-charcoal);
+      border-bottom: 1px solid var(--color-stone);
+    }
+    .mobile-drawer a:hover {
+      color: var(--color-forest);
+    }
+
+    /* ==========================================================================
+       SECTION BASE: COMPACT VIEWPORT PRESENCE & ZERO EYEBROW TEXTS
+       ========================================================================== */
+    .section {
+      padding: 60px 0;
+      position: relative;
+      border-bottom: 1px solid var(--color-stone);
+    }
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.4rem;
+      color: var(--color-forest);
+    }
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--color-charcoal-muted);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       01 HERO: BOLD TYPOGRAPHY + HORIZONTAL DIVIDED PROOF STRIP (NO BOXES)
+       ========================================================================== */
+    .hero-section {
+      padding: 105px 0 50px;
+      position: relative;
+      border-bottom: 1px solid var(--color-stone);
+    }
+    .hero-wrap {
+      max-width: 920px;
+    }
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.15rem;
+      color: var(--color-forest);
+    }
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 1.35vw, 1.15rem);
+      line-height: 1.65;
+      color: var(--color-charcoal);
+      margin-bottom: 1.75rem;
+      max-width: 680px;
+    }
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Horizontal Ruled Proof Strip (Unboxed, purely typographic with hairlines) */
+    .hero-proof-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--color-stone);
+      padding-top: 1.25rem;
+      gap: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .hero-proof-strip {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+      }
+    }
+    .proof-stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      border-left: 2px solid var(--color-forest);
+      padding-left: 0.85rem;
+    }
+    .proof-stat-num {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-forest);
+      line-height: 1.1;
+    }
+    .proof-stat-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+    }
+    .proof-stat-sub {
+      font-size: 0.72rem;
+      color: var(--color-charcoal-muted);
+    }
+
+    /* Ticker */
+    .credentials-ticker {
+      border-bottom: 1px solid var(--color-stone);
+      background: var(--bg-surface);
+      padding: 0.75rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ticker-inner {
+      display: inline-flex;
+      align-items: center;
+      gap: 2rem;
+      animation: tickerScroll 28s linear infinite;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-forest);
+    }
+    .ticker-inner span.dot {
+      color: var(--color-olive-dark);
+    }
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ==========================================================================
+       02 OVERVIEW: CONNECTED FLOW RAILS (NO GRID BOXES)
+       ========================================================================== */
+    .overview-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 860px) {
+      .overview-layout {
+        grid-template-columns: 380px 1fr;
+        gap: 3.5rem;
+      }
+    }
+    .overview-lead p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--color-charcoal);
+      margin-bottom: 1rem;
+    }
+    .overview-lead strong {
+      color: var(--color-forest);
+    }
+
+    /* Architectural progressive timeline rail (Zero cards, clean lines) */
+    .pipeline-rail {
+      display: flex;
+      flex-direction: column;
+      border-left: 2px solid var(--color-stone);
+      padding-left: 1.5rem;
+      gap: 1.5rem;
+    }
+    .rail-step {
+      position: relative;
+    }
+    .rail-step::before {
+      content: '';
+      position: absolute;
+      left: -1.95rem;
+      top: 0.25rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-forest);
+      border: 2px solid var(--bg-cream);
+    }
+    .rail-step h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 0.2rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+    .rail-step h4 span.step-idx {
+      font-size: 0.75rem;
+      color: var(--color-olive-dark);
+      font-family: var(--font-heading);
+    }
+    .rail-step p {
+      font-size: 0.88rem;
+      color: var(--color-charcoal);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       03 SERVICES: INTERACTIVE SPLIT SERVICE BROWSER (NO REPETITIVE BOXES)
+       ========================================================================== */
+    .services-browser {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (min-width: 860px) {
+      .services-browser {
+        grid-template-columns: 1fr 1.25fr;
+        gap: 3rem;
+      }
+    }
+
+    /* Left: List of 5 services with active underline & indicators */
+    .services-index-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .service-index-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.15rem;
+      border: 1px solid var(--color-stone);
+      background: var(--bg-surface);
+      color: var(--color-charcoal);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background var(--transition), border-color var(--transition), color var(--transition);
+    }
+    .service-index-btn:hover {
+      background: #FFFFFF;
+      border-color: var(--color-forest);
+      color: var(--color-forest);
+    }
+    .service-index-btn.active {
+      background: var(--color-forest);
+      color: var(--bg-cream);
+      border-color: var(--color-forest);
+    }
+    .service-index-btn .btn-arrow {
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+    .service-index-btn.active .btn-arrow {
+      opacity: 1;
+    }
+
+    /* Right: Service Detail Spotlight Panel */
+    .service-spotlight-stage {
+      border: 2px solid var(--color-forest);
+      background: var(--bg-surface);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .spotlight-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 0.65rem;
+      line-height: 1.25;
+    }
+    .spotlight-desc {
+      font-size: 0.95rem;
+      color: var(--color-charcoal);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .spotlight-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.75rem;
+    }
+    .spotlight-checklist li {
+      font-size: 0.88rem;
+      color: var(--color-charcoal);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .spotlight-checklist li::before {
+      content: '✓';
+      color: var(--color-forest);
+      font-weight: 700;
+    }
+    .spotlight-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid var(--color-stone);
+      padding-top: 1.25rem;
+    }
+
+    /* ==========================================================================
+       05 RESULTS: EDITORIAL CASE STUDY WITH GOOGLE SERP SIMULATION (NO CARDS)
+       ========================================================================== */
+    .results-nav {
+      display: flex;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--color-stone);
+      margin-bottom: 1.75rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .results-tab-btn {
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: var(--color-charcoal-muted);
+      padding: 0.65rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color var(--transition), border-color var(--transition);
+    }
+    .results-tab-btn:hover {
+      color: var(--color-forest);
+    }
+    .results-tab-btn.active {
+      color: var(--color-forest);
+      border-bottom-color: var(--color-forest);
+    }
+
+    .case-stage-panel {
+      display: none;
+    }
+    .case-stage-panel.active {
+      display: block;
+    }
+
+    /* Distinct Metric Ribbon (Flat, minimal hairlines) */
+    .case-metric-ribbon {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--color-stone);
+      border-bottom: 1px solid var(--color-stone);
+      padding: 1rem 0;
+      margin-bottom: 1.75rem;
+      gap: 1.5rem;
+    }
+    @media (max-width: 600px) {
+      .case-metric-ribbon {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+    }
+    .ribbon-cell {
+      display: flex;
+      flex-direction: column;
+    }
+    .ribbon-val {
+      font-family: var(--font-heading);
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--color-forest);
+      line-height: 1.1;
+    }
+    .ribbon-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+    }
+    .ribbon-sub {
+      font-size: 0.72rem;
+      color: var(--color-charcoal-muted);
+    }
+
+    /* Magazine-style split: Narrative on left, SERP ranking mockup on right */
+    .case-magazine-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    @media (max-width: 860px) {
+      .case-magazine-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    .case-narrative h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 0.35rem;
+    }
+    .case-narrative p {
+      font-size: 0.9rem;
+      color: var(--color-charcoal);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .case-impact-rule {
+      border-left: 3px solid var(--color-forest);
+      background: var(--bg-surface);
+      padding: 0.85rem 1rem;
+      font-size: 0.85rem;
+      color: var(--color-charcoal);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    /* Clean Google Search Mockup Box (Visually distinct from any grid) */
+    .serp-simulation-card {
+      border: 1px solid var(--color-stone);
+      background: #FFFFFF;
+      padding: 1.25rem;
+      border-radius: var(--radius-sm);
+    }
+    .serp-header {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-charcoal-muted);
+      border-bottom: 1px solid var(--color-stone);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .serp-url {
+      font-size: 0.75rem;
+      color: var(--color-forest);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-bottom: 0.25rem;
+    }
+    .serp-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #1a0dab; /* Authentic Search Blue */
+      line-height: 1.3;
+      margin-bottom: 0.25rem;
+    }
+    .serp-snippet {
+      font-size: 0.82rem;
+      color: #4d5156;
+      line-height: 1.45;
+      margin-bottom: 1rem;
+    }
+    .serp-rank-strip {
+      border-top: 1px solid var(--bg-cream);
+      padding-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .serp-rank-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+    }
+    .serp-rank-pill {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--color-forest);
+      background: var(--color-olive-tint);
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    /* ==========================================================================
+       06 WORK: COMPACT SLIDER STAGE
+       ========================================================================== */
+    .slider-header-wrap {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      gap: 1rem;
+    }
+    .slider-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .slider-counter {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-forest);
+    }
+    .slider-btn-group {
+      display: flex;
+      gap: 0.4rem;
+    }
+    .slider-btn {
+      width: 36px;
+      height: 36px;
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      color: var(--color-forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      transition: background var(--transition), border-color var(--transition), color var(--transition);
+    }
+    .slider-btn:hover {
+      background: var(--color-forest);
+      border-color: var(--color-forest);
+      color: var(--bg-cream);
+    }
+
+    .showcase-stage {
+      position: relative;
+      width: 100%;
+      height: 440px;
+      min-height: 440px;
+      max-height: 440px;
+      border: 1px solid var(--color-stone);
+      background: var(--bg-surface);
+      overflow: hidden;
+      display: grid;
+      grid-template-areas: "slide";
+      border-radius: var(--radius-md);
+    }
+    @media (max-width: 900px) {
+      .showcase-stage {
+        height: 560px;
+        min-height: 560px;
+        max-height: 560px;
+      }
+    }
+    @media (max-width: 600px) {
+      .showcase-stage {
+        height: 620px;
+        min-height: 620px;
+        max-height: 620px;
+      }
+    }
+
+    .showcase-slide {
+      grid-area: slide;
+      width: 100%;
+      height: 100%;
+      padding: clamp(1.25rem, 2.5vw, 2rem);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateX(10px);
+      transition: opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1), transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.24s;
+    }
+    @media (max-width: 900px) {
+      .showcase-slide {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 1.25rem;
+        overflow-y: auto;
+      }
+    }
+    .showcase-slide.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(0);
+      z-index: 2;
+    }
+
+    .slide-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.3rem, 2vw, 1.7rem);
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 0.35rem;
+    }
+    .slide-role {
+      font-size: 0.8rem;
+      color: var(--color-charcoal-muted);
+      margin-bottom: 0.85rem;
+    }
+    .slide-desc {
+      font-size: 0.88rem;
+      color: var(--color-charcoal);
+      line-height: 1.55;
+      margin-bottom: 1.15rem;
+    }
+    .slide-tech-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
+      list-style: none;
+    }
+    .slide-tech-item {
+      font-size: 0.78rem;
+      color: var(--color-charcoal);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .slide-tech-item::before {
+      content: '■';
+      font-size: 0.45rem;
+      color: var(--color-forest);
+    }
+
+    .slide-browser-preview {
+      border: 1px solid var(--color-stone);
+      background: var(--bg-cream);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: var(--radius-sm);
+    }
+    .browser-top-bar {
+      height: 30px;
+      background: var(--bg-surface-alt);
+      border-bottom: 1px solid var(--color-stone);
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      gap: 8px;
+    }
+    .browser-indicators {
+      display: flex;
+      gap: 4px;
+    }
+    .browser-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--color-stone-dark);
+      border-radius: 50%;
+    }
+    .browser-url {
+      flex: 1;
+      height: 18px;
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      padding: 0 6px;
+      font-size: 0.7rem;
+      color: var(--color-charcoal-muted);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .browser-img-holder {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background: #D6CDBA;
+      overflow: hidden;
+    }
+    .browser-img-holder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .showcase-pills-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 0.35rem;
+    }
+    .showcase-pills-bar::-webkit-scrollbar {
+      display: none;
+    }
+    .showcase-pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      color: var(--color-charcoal);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition), border-color var(--transition);
+      border-radius: var(--radius-sm);
+    }
+    .showcase-pill:hover {
+      color: var(--color-forest);
+      border-color: var(--color-forest);
+    }
+    .showcase-pill.active {
+      background: var(--color-forest);
+      color: var(--bg-cream);
+      border-color: var(--color-forest);
+    }
+
+    /* ==========================================================================
+       07 PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL (NOT BOXED CARDS)
+       ========================================================================== */
+    .process-track-horizontal {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      position: relative;
+      gap: 1.5rem;
+      border-top: 2px solid var(--color-forest);
+      padding-top: 1.5rem;
+    }
+    @media (max-width: 860px) {
+      .process-track-horizontal {
+        grid-template-columns: 1fr;
+        border-top: none;
+        border-left: 2px solid var(--color-forest);
+        padding-top: 0;
+        padding-left: 1.5rem;
+        gap: 1.5rem;
+      }
+    }
+    .process-node {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .node-number {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 0.5rem;
+    }
+    .node-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 0.35rem;
+    }
+    .node-text {
+      font-size: 0.825rem;
+      color: var(--color-charcoal);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       08 ABOUT & 09 CONTACT: CLEAN EDITORIAL
+       ========================================================================== */
+    .about-editorial-wrap {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .about-editorial-wrap {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+    .about-avatar-box {
+      border: 1px solid var(--color-stone);
+      background: var(--bg-surface);
+      padding: 0.75rem;
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+    .about-avatar-box img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: var(--radius-sm);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .about-avatar-box strong {
+      font-size: 0.9rem;
+      color: var(--color-forest);
+      display: block;
+    }
+    .about-avatar-box span {
+      font-size: 0.75rem;
+      color: var(--color-charcoal-muted);
+    }
+
+    .about-editorial-text p {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--color-charcoal);
+      margin-bottom: 0.85rem;
+    }
+    .about-editorial-text strong {
+      color: var(--color-forest);
+    }
+    .about-tools-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+    .tool-chip {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-forest);
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* Contact compact split */
+    .contact-split-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      .contact-split-wrap {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+    }
+    .contact-channels-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .channel-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--color-stone);
+      background: var(--bg-surface);
+      border-radius: var(--radius-sm);
+      transition: border-color var(--transition), background var(--transition);
+    }
+    .channel-item:hover {
+      border-color: var(--color-forest);
+      background: #FFFFFF;
+    }
+    .channel-item small {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-charcoal-muted);
+    }
+    .channel-item strong {
+      font-size: 0.88rem;
+      color: var(--color-forest);
+    }
+
+    .contact-form-box {
+      border: 1px solid var(--color-stone);
+      background: var(--bg-surface);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+    }
+    .form-group-item {
+      margin-bottom: 0.95rem;
+    }
+    .form-row-dual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 500px) {
+      .form-row-dual {
+        grid-template-columns: 1fr;
+      }
+    }
+    .form-label-txt {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+      margin-bottom: 0.25rem;
+    }
+    .form-field {
+      width: 100%;
+      background: var(--bg-cream);
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.8rem;
+      font-size: 0.85rem;
+      color: var(--color-charcoal);
+      outline: none;
+      transition: border-color var(--transition);
+    }
+    .form-field:focus {
+      border-color: var(--color-forest);
+    }
+    select.form-field {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23244638' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.8rem center;
+      padding-right: 2.25rem;
+    }
+
+    .form-alert-msg {
+      display: none;
+      padding: 0.75rem;
+      border: 1px solid var(--color-stone);
+      border-radius: var(--radius-sm);
+      margin-top: 0.75rem;
+      font-size: 0.825rem;
+      line-height: 1.45;
+    }
+    .form-alert-msg.success {
+      display: block;
+      background: var(--color-olive-tint);
+      border-color: var(--color-olive);
+      color: var(--color-forest);
+    }
+    .form-alert-msg.error {
+      display: block;
+      background: #FEE2E2;
+      border-color: #EF4444;
+      color: #991B1B;
+    }
+
+    .closing-bar {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-stone);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--color-charcoal-muted);
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      background: var(--bg-surface);
+      border: 1px solid var(--color-stone);
+      color: var(--color-forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 90;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .back-to-top:hover {
+      border-color: var(--color-forest);
+      background: var(--color-forest);
+      color: var(--bg-cream);
+    }
+
+    @media (max-width: 860px) {
+      .nav-menu {
+        display: none;
+      }
+      .mobile-toggle {
+        display: flex;
+      }
+      .section {
+        padding: 50px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       SITE HEADER: 1-WORD TABS ONLY
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="brand" aria-label="Mohammed Sohail Sayyed Portfolio">
+          <div class="brand-mark">MS</div>
+          <span>Mohammed Sohail</span>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="#overview" class="nav-link">Overview</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#results" class="nav-link">Results</a></li>
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="https://calendar.app.google/uzH9KFj874kFUX9L9" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <span>Book a Call</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#hero" class="mobile-nav-item">Home</a>
+    <a href="#overview" class="mobile-nav-item">Overview</a>
+    <a href="#services" class="mobile-nav-item">Services</a>
+    <a href="#results" class="mobile-nav-item">Results</a>
+    <a href="#work" class="mobile-nav-item">Work</a>
+    <a href="#process" class="mobile-nav-item">Process</a>
+    <a href="#about" class="mobile-nav-item">About</a>
+    <a href="#contact" class="mobile-nav-item">Contact</a>
+    <a href="https://calendar.app.google/uzH9KFj874kFUX9L9" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 0.5rem; text-align: center;">Book a Call →</a>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         HERO: EDITORIAL TYPOGRAPHY + HORIZONTAL DIVIDED PROOF STRIP (NO BOXES)
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-wrap">
+          <h1 class="hero-title">
+            Websites, SEO &amp; Digital Marketing Built to Grow Your Business.
+          </h1>
+
+          <p class="hero-subtitle">
+            I help companies get found on Google, build fast websites that convert visitors into paying clients, and run campaigns with real commercial results. Direct 1-on-1 collaboration with me from day one.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#results" class="btn btn-primary btn-lg">
+              <span>View SEO Case Studies</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a href="https://calendar.app.google/uzH9KFj874kFUX9L9" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+              <span>Book a Free Call</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <!-- Unboxed proof strip with hairlines -->
+          <div class="hero-proof-strip">
+            <div class="proof-stat-item">
+              <span class="proof-stat-num">+117% to +378%</span>
+              <span class="proof-stat-label">Organic Click Growth</span>
+              <span class="proof-stat-sub">Verified in Search Console</span>
+            </div>
+            <div class="proof-stat-item">
+              <span class="proof-stat-num">1.06M+</span>
+              <span class="proof-stat-label">Search Impressions</span>
+              <span class="proof-stat-sub">Targeted customer reach</span>
+            </div>
+            <div class="proof-stat-item">
+              <span class="proof-stat-num">Page 1</span>
+              <span class="proof-stat-label">Google Rankings</span>
+              <span class="proof-stat-sub">High-intent buyer searches</span>
+            </div>
+            <div class="proof-stat-item">
+              <span class="proof-stat-num">&lt; 24h</span>
+              <span class="proof-stat-label">Direct Communication</span>
+              <span class="proof-stat-sub">You talk directly to me</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="credentials-ticker" aria-hidden="true">
+      <div class="ticker-inner">
+        <span>Technical SEO</span> <span class="dot">/</span>
+        <span>Custom Web Design</span> <span class="dot">/</span>
+        <span>Google Search Rankings</span> <span class="dot">/</span>
+        <span>Pay-Per-Click Advertising</span> <span class="dot">/</span>
+        <span>Conversion Optimization</span> <span class="dot">/</span>
+        <span>Social Media Management</span> <span class="dot">/</span>
+        <span>Fast Loading Speeds</span> <span class="dot">/</span>
+        <span>Technical SEO</span> <span class="dot">/</span>
+        <span>Custom Web Design</span> <span class="dot">/</span>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         OVERVIEW: PROGRESSIVE TIMELINE RAIL (NOT A BOXED GRID)
+         ======================================================================== -->
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="overview-layout">
+          <div class="overview-lead">
+            <h2 class="section-title">How Everything Works Together</h2>
+            <p>
+              Marketing works best when everything connects. When your website is fast and your SEO targets ready-to-buy customers, you get steady inquiries without burning budget.
+            </p>
+            <p>
+              Most businesses lose leads because of <strong>disconnects in their online funnel</strong>. I connect SEO, custom web design, and paid advertising into a smooth pipeline where visitors easily find you and reach out.
+            </p>
+          </div>
+
+          <!-- Continuous architectural rail -->
+          <div class="pipeline-rail">
+            <div class="rail-step">
+              <h4><span class="step-idx">01</span> Search Intent (SEO)</h4>
+              <p>I find and target the exact queries customers search on Google when ready to purchase.</p>
+            </div>
+            <div class="rail-step">
+              <h4><span class="step-idx">02</span> Web Design &amp; Conversion</h4>
+              <p>I build clean, sub-second websites that make contacting you effortless on mobile and desktop.</p>
+            </div>
+            <div class="rail-step">
+              <h4><span class="step-idx">03</span> Targeted Paid Ads (PPC)</h4>
+              <p>I launch targeted Google and social ad campaigns when you need immediate buyer traffic.</p>
+            </div>
+            <div class="rail-step">
+              <h4><span class="step-idx">04</span> Real Telemetry &amp; Measurement</h4>
+              <p>I set up measurement tied directly to phone calls, form clicks, and actual business leads.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SERVICES: INTERACTIVE SERVICE BROWSER (NOT REPETITIVE CARDS)
+         ======================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Services &amp; Capabilities</h2>
+          <p class="section-desc">
+            Five core disciplines I use to get your business discovered, trusted, and contacted online. Select a service to see details.
+          </p>
+        </div>
+
+        <div class="services-browser">
+          <!-- Left: 5 Service Selector Items -->
+          <div class="services-index-list" role="tablist" aria-label="Select Service">
+            <button class="service-index-btn active" data-service-idx="0" role="tab" aria-selected="true">
+              <span>01. Search Engine Optimization (SEO)</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <button class="service-index-btn" data-service-idx="1" role="tab" aria-selected="false">
+              <span>02. Website Design &amp; Development</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <button class="service-index-btn" data-service-idx="2" role="tab" aria-selected="false">
+              <span>03. Pay-Per-Click Advertising (PPC)</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <button class="service-index-btn" data-service-idx="3" role="tab" aria-selected="false">
+              <span>04. Social Media Management</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <button class="service-index-btn" data-service-idx="4" role="tab" aria-selected="false">
+              <span>05. Analytics &amp; Conversion Tracking</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+
+          <!-- Right: Dynamic Service Spotlight Stage -->
+          <div class="service-spotlight-stage" id="serviceSpotlight">
+            <div>
+              <h3 class="spotlight-title" id="spotlightTitle">Search Engine Optimization (SEO)</h3>
+              <p class="spotlight-desc" id="spotlightDesc">
+                I conduct technical site audits, map high-intent search queries, and optimize your local Google Business Profile to rank your high-value pages on Google Page 1.
+              </p>
+              <ul class="spotlight-checklist" id="spotlightChecklist">
+                <li>Technical health &amp; Core Web Vitals speed fixes</li>
+                <li>Commercial keyword &amp; buyer search intent targeting</li>
+                <li>Local map pack &amp; Google Business Profile rankings</li>
+                <li>Structured schema markup for rich search results</li>
+              </ul>
+            </div>
+            <div class="spotlight-bottom">
+              <span style="font-size: 0.8rem; color: var(--color-charcoal-muted);">Direct consultation &amp; milestone execution</span>
+              <button type="button" class="btn btn-primary btn-sm" id="spotlightActionBtn" onclick="selectServiceForContact('Search Engine Optimization (SEO)')">
+                <span>Inquire About This Service →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         RESULTS: SEO CASE STUDIES (EDITORIAL SERP PREVIEW, NO CARDS)
+         ======================================================================== -->
+    <section class="section" id="results">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">SEO Case Studies</h2>
+          <p class="section-desc">
+            Documented search performance metrics, Page 1 keyword wins, and buyer inquiry growth.
+          </p>
+        </div>
+
+        <!-- Case Study Selector Tabs -->
+        <div class="results-nav" role="tablist" aria-label="SEO Case Study Tabs">
+          <button class="results-tab-btn active" data-tab="0" role="tab" aria-selected="true" id="tab-res-0">
+            Township &amp; Location SEO
+          </button>
+          <button class="results-tab-btn" data-tab="1" role="tab" aria-selected="false" id="tab-res-1">
+            Commercial Business Park SEO
+          </button>
+          <button class="results-tab-btn" data-tab="2" role="tab" aria-selected="false" id="tab-res-2">
+            Regional Growth Corridor SEO
+          </button>
+        </div>
+
+        <!-- Panel 01 -->
+        <article class="case-stage-panel active" id="case-panel-0" role="tabpanel">
+          <div class="case-metric-ribbon">
+            <div class="ribbon-cell">
+              <span class="ribbon-val">+117%</span>
+              <span class="ribbon-label">Organic Clicks</span>
+              <span class="ribbon-sub">From 1,300 to 9,160 visits</span>
+            </div>
+            <div class="ribbon-cell">
+              <span class="ribbon-val">1.06M+</span>
+              <span class="ribbon-label">Search Impressions</span>
+              <span class="ribbon-sub">Up +206% in search views</span>
+            </div>
+            <div class="ribbon-cell">
+              <span class="ribbon-val">Page 1 (5.9)</span>
+              <span class="ribbon-label">Average Ranking</span>
+              <span class="ribbon-sub">Jumped from Page 2 (13.3)</span>
+            </div>
+          </div>
+
+          <div class="case-magazine-grid">
+            <div class="case-narrative">
+              <h4>The Challenge &amp; Solution</h4>
+              <p>
+                The client had strong offline credibility but little search visibility. I resolved crawl bottlenecks, sped up mobile pages, and built location-specific landing pages tied together with clean internal linking.
+              </p>
+              <div class="case-impact-rule">
+                <strong>Business Result:</strong> Organic Google search became the primary channel for customer inquiries and walk-ins, eliminating dependence on costly third-party aggregate portals.
+              </div>
+            </div>
+
+            <!-- Google Search Mockup Box -->
+            <div class="serp-simulation-card">
+              <div class="serp-header">
+                <span>Google Page 1 Ranking Preview</span>
+                <span>Verified SERP</span>
+              </div>
+              <div class="serp-url">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>khopoli-residential-developer.com</span>
+              </div>
+              <div class="serp-title">Khopoli Real Estate &amp; Modern 1 &amp; 2 BHK Township Flats</div>
+              <div class="serp-snippet">
+                Explore premier residential township flats in Khopoli near Karjat station. Scenic hillside living with modern amenities, direct connectivity, and site tours available.
+              </div>
+              <div class="serp-rank-strip">
+                <div class="serp-rank-row">
+                  <span>Khopoli real estate</span>
+                  <span class="serp-rank-pill">Rank #1</span>
+                </div>
+                <div class="serp-rank-row">
+                  <span>2 BHK near Karjat</span>
+                  <span class="serp-rank-pill">Rank #3</span>
+                </div>
+                <div class="serp-rank-row">
+                  <span>Township projects in Khopoli</span>
+                  <span class="serp-rank-pill">Rank #1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panel 02 -->
+        <article class="case-stage-panel" id="case-panel-1" role="tabpanel">
+          <div class="case-metric-ribbon">
+            <div class="ribbon-cell">
+              <span class="ribbon-val">+152%</span>
+              <span class="ribbon-label">Organic Clicks</span>
+              <span class="ribbon-sub">381 → 2,124 monthly visits</span>
+            </div>
+            <div class="ribbon-cell">
+              <span class="ribbon-val">144.2K</span>
+              <span class="ribbon-label">Search Impressions</span>
+              <span class="ribbon-sub">Up +291% in commercial views</span>
+            </div>
+            <div class="ribbon-cell">
+              <span class="ribbon-val">Top 3</span>
+              <span class="ribbon-label">B2B Office Searches</span>
+              <span class="ribbon-sub">Dominating commercial leasing</span>
+            </div>
+          </div>
+
+          <div class="case-magazine-grid">
+            <div class="case-narrative">
+              <h4>The Challenge &amp; Solution</h4>
+              <p>
+                Nearly 90% of searches were purely branded. I separated commercial B2B searches from residential queries and created dedicated pages detailing floor plates, power capacity, parking, and transit access.
+              </p>
+              <div class="case-impact-rule">
+                <strong>Business Result:</strong> Turned organic search into an active leasing engine for corporate tenants and brokers, saving substantial commercial commission fees.
+              </div>
+            </div>
+
+            <div class="serp-simulation-card">
+              <div class="serp-header">
+                <span>Google Page 1 Ranking Preview</span>
+                <span>Verified SERP</span>
+              </div>
+              <div class="serp-url">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>turbhe-business-park.com</span>
+              </div>
+              <div class="serp-title">Commercial Business Park Turbhe | Modern Grade-A Offices</div>
+              <div class="serp-snippet">
+                Turbhe commercial office spaces for IT, logistics, and corporate headquarters. Large floor plates, fiber connectivity, and rapid highway access in Navi Mumbai.
+              </div>
+              <div class="serp-rank-strip">
+                <div class="serp-rank-row">
+                  <span>Commercial business park Turbhe</span>
+                  <span class="serp-rank-pill">Rank #1</span>
+                </div>
+                <div class="serp-rank-row">
+                  <span>Turbhe commercial projects</span>
+                  <span class="serp-rank-pill">Rank #2</span>
+                </div>
+                <div class="serp-rank-row">
+                  <span>Business park Turbhe</span>
+                  <span class="serp-rank-pill">Rank #1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panel 03 -->
+        <article class="case-stage-panel" id="case-panel-2" role="tabpanel">
+          <div class="case-metric-ribbon">
+            <div class="ribbon-cell">
+              <span class="ribbon-val">+378%</span>
+              <span class="ribbon-label">Organic Clicks</span>
+              <span class="ribbon-sub">Triple-digit inquiry growth</span>
+            </div>
+            <div class="ribbon-cell">
+              <span class="ribbon-val">+1,385%</span>
+              <span class="ribbon-label">Search Impressions</span>
+              <span class="ribbon-sub">Quadruple-digit reach expansion</span>
+            </div>
+            <div class="ribbon-cell">
+              <span class="ribbon-val">+52%</span>
+              <span class="ribbon-label">Overall Ranking Jump</span>
+              <span class="ribbon-sub">Dominating regional corridor</span>
+            </div>
+          </div>
+
+          <div class="case-magazine-grid">
+            <div class="case-narrative">
+              <h4>The Challenge &amp; Solution</h4>
+              <p>
+                Broken sitemaps and indexation issues caused the site to be missed by Google. I resolved the technical structure, stripped redirect chains, and published comprehensive transit and infrastructure content.
+              </p>
+              <div class="case-impact-rule">
+                <strong>Business Result:</strong> Transformed an inactive website into a regional authority portal, delivering consistent inbound buyer inquiries during peak launch windows.
+              </div>
+            </div>
+
+            <div class="serp-simulation-card">
+              <div class="serp-header">
+                <span>Google Page 1 Ranking Preview</span>
+                <span>Verified SERP</span>
+              </div>
+              <div class="serp-url">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>panvel-growth-corridor.com</span>
+              </div>
+              <div class="serp-title">Real Estate Developers in Panvel | Mumbai 3.0 Property Map</div>
+              <div class="serp-snippet">
+                New residential plots, villas, and apartments near Navi Mumbai International Airport. Infrastructure updates, connectivity maps, and master plans.
+              </div>
+              <div class="serp-rank-strip">
+                <div class="serp-rank-row">
+                  <span>Real estate developer in Panvel</span>
+                  <span class="serp-rank-pill">Rank #1</span>
+                </div>
+                <div class="serp-rank-row">
+                  <span>Mumbai 3.0 Map</span>
+                  <span class="serp-rank-pill">Top 3</span>
+                </div>
+                <div class="serp-rank-row">
+                  <span>Villa projects in Panvel</span>
+                  <span class="serp-rank-pill">Rank #1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         WORK: WEBSITES SHOWCASE (COMPACT SLIDER STAGE)
+         ======================================================================== -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="slider-header-wrap">
+          <div>
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-desc">Custom websites and web applications I designed and built.</p>
+          </div>
+          <div class="slider-controls">
+            <span class="slider-counter" id="showcaseCounter" aria-live="polite">01 / 06</span>
+            <div class="slider-btn-group">
+              <button class="slider-btn" id="prevSlideBtn" aria-label="Previous slide">←</button>
+              <button class="slider-btn" id="nextSlideBtn" aria-label="Next slide">→</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase-stage" id="showcaseStage">
+          <!-- Slide 01 -->
+          <article class="showcase-slide active" data-index="0">
+            <div class="slide-info">
+              <h3 class="slide-title">Voz d Victoria</h3>
+              <div class="slide-role"><strong>Role:</strong> Web Design · Multilingual Architecture · SEO</div>
+              <p class="slide-desc">
+                Clean multilingual platform for an international translation agency. Language switching, localized search tags, and an instant quote request form.
+              </p>
+              <ul class="slide-tech-list">
+                <li class="slide-tech-item">WordPress Multilingual</li>
+                <li class="slide-tech-item">Hreflang &amp; SEO Tags</li>
+                <li class="slide-tech-item">Instant Quote RFQ Form</li>
+                <li class="slide-tech-item">Fast Mobile Speeds</li>
+              </ul>
+              <div>
+                <a href="https://vozdvictoria.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>Visit Website ↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide-browser-preview">
+              <div class="browser-top-bar" aria-hidden="true">
+                <div class="browser-indicators">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-url">https://vozdvictoria.com</div>
+              </div>
+              <div class="browser-img-holder">
+                <img src="https://i.ibb.co/JjfzQSjN/Vozd-Victoria.png" alt="Voz d Victoria Interface" loading="lazy" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 02 -->
+          <article class="showcase-slide" data-index="1">
+            <div class="slide-info">
+              <h3 class="slide-title">American Academy School</h3>
+              <div class="slide-role"><strong>Role:</strong> Web Design · Admissions Intake · Mobile Layout</div>
+              <p class="slide-desc">
+                Institutional portal for American Academy School in Qatar. Integrated online admissions, campus photo galleries, and parent navigation.
+              </p>
+              <ul class="slide-tech-list">
+                <li class="slide-tech-item">Admissions Application Flow</li>
+                <li class="slide-tech-item">Campus Media Gallery</li>
+                <li class="slide-tech-item">Mobile Responsive Layout</li>
+                <li class="slide-tech-item">Structured Academic Schema</li>
+              </ul>
+              <div>
+                <a href="https://www.americanacademy.sch.qa/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>Visit Website ↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide-browser-preview">
+              <div class="browser-top-bar" aria-hidden="true">
+                <div class="browser-indicators">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-url">https://www.americanacademy.sch.qa</div>
+              </div>
+              <div class="browser-img-holder">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80" alt="American Academy School Portal" loading="lazy" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 03 -->
+          <article class="showcase-slide" data-index="2">
+            <div class="slide-info">
+              <h3 class="slide-title">Reliable Thermal Solutions</h3>
+              <div class="slide-role"><strong>Role:</strong> B2B Web Development · Product Catalog · Inquiries</div>
+              <p class="slide-desc">
+                Industrial equipment platform displaying steam boilers and thermal machinery. Technical spec sheets and fast quote forms for commercial buyers.
+              </p>
+              <ul class="slide-tech-list">
+                <li class="slide-tech-item">Heavy Equipment Catalog</li>
+                <li class="slide-tech-item">B2B RFQ Quote Forms</li>
+                <li class="slide-tech-item">Clear Spec Documentation</li>
+                <li class="slide-tech-item">Fast Inquiry Options</li>
+              </ul>
+              <div>
+                <a href="https://www.reliablethermal.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>Visit Website ↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide-browser-preview">
+              <div class="browser-top-bar" aria-hidden="true">
+                <div class="browser-indicators">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-url">https://www.reliablethermal.com</div>
+              </div>
+              <div class="browser-img-holder">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" alt="Reliable Thermal Solutions" loading="lazy" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 04 -->
+          <article class="showcase-slide" data-index="3">
+            <div class="slide-info">
+              <h3 class="slide-title">Sultan Chef</h3>
+              <div class="slide-role"><strong>Role:</strong> Web Design · Digital Menu · Table Reservations</div>
+              <p class="slide-desc">
+                Digital presence for Sultan Chef Turkish Steakhouse. Interactive dining menu, branch location guides, and online table reservations.
+              </p>
+              <ul class="slide-tech-list">
+                <li class="slide-tech-item">Interactive Dining Menu</li>
+                <li class="slide-tech-item">Table Reservation System</li>
+                <li class="slide-tech-item">Multi-Branch Location Maps</li>
+                <li class="slide-tech-item">Clean Visual Branding</li>
+              </ul>
+              <div>
+                <a href="https://www.sultanchef.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>Visit Website ↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide-browser-preview">
+              <div class="browser-top-bar" aria-hidden="true">
+                <div class="browser-indicators">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-url">https://www.sultanchef.com</div>
+              </div>
+              <div class="browser-img-holder">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Sultan Chef" loading="lazy" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 05 -->
+          <article class="showcase-slide" data-index="4">
+            <div class="slide-info">
+              <h3 class="slide-title">Profilelinc</h3>
+              <div class="slide-role"><strong>Role:</strong> Platform Build · CRM Workflows · Lead Automation</div>
+              <p class="slide-desc">
+                Networking and CRM platform powered by GoHighLevel. Automated contact follow-ups, pipeline workflows, and a clean mobile interface.
+              </p>
+              <ul class="slide-tech-list">
+                <li class="slide-tech-item">GoHighLevel CRM Setup</li>
+                <li class="slide-tech-item">Automated Follow-ups</li>
+                <li class="slide-tech-item">Fast Loading Speeds</li>
+                <li class="slide-tech-item">Mobile Card Sharing</li>
+              </ul>
+              <div>
+                <a href="https://profilelinc.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>Visit Platform ↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide-browser-preview">
+              <div class="browser-top-bar" aria-hidden="true">
+                <div class="browser-indicators">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-url">https://profilelinc.com</div>
+              </div>
+              <div class="browser-img-holder">
+                <img src="https://i.ibb.co/FqsrtqQs/Profilelinc.png" alt="Profilelinc" loading="lazy" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 06 -->
+          <article class="showcase-slide" data-index="5">
+            <div class="slide-info">
+              <h3 class="slide-title">Interactive Presentation</h3>
+              <div class="slide-role"><strong>Role:</strong> UI/UX Design · Front-End Code · Lightweight</div>
+              <p class="slide-desc">
+                Interactive web presentation engine replacing standard slide decks. Instant browser loading with keyboard hotkeys and touch swipe.
+              </p>
+              <ul class="slide-tech-list">
+                <li class="slide-tech-item">Zero-Bloat Vanilla Code</li>
+                <li class="slide-tech-item">Touch Swipe &amp; Keyboard Controls</li>
+                <li class="slide-tech-item">Interactive Metric Cards</li>
+                <li class="slide-tech-item">Instant Link Sharing</li>
+              </ul>
+              <div>
+                <a href="https://profilelinc.com/pfs-overview" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>Open Presentation ↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide-browser-preview">
+              <div class="browser-top-bar" aria-hidden="true">
+                <div class="browser-indicators">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <div class="browser-url">https://profilelinc.com/pfs-overview</div>
+              </div>
+              <div class="browser-img-holder">
+                <img src="https://i.ibb.co/r2LTW5Gm/presentation.png" alt="Interactive Presentation" loading="lazy" />
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Slider Pills Navigation -->
+        <div class="showcase-pills-bar" id="showcasePills" role="tablist">
+          <button class="showcase-pill active" data-slide="0" role="tab" aria-selected="true">Voz d Victoria</button>
+          <button class="showcase-pill" data-slide="1" role="tab" aria-selected="false">American Academy</button>
+          <button class="showcase-pill" data-slide="2" role="tab" aria-selected="false">Reliable Thermal</button>
+          <button class="showcase-pill" data-slide="3" role="tab" aria-selected="false">Sultan Chef</button>
+          <button class="showcase-pill" data-slide="4" role="tab" aria-selected="false">Profilelinc</button>
+          <button class="showcase-pill" data-slide="5" role="tab" aria-selected="false">Interactive Deck</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PROCESS: HORIZONTAL CONNECTED TIMELINE RAIL (NOT BOXED CARDS)
+         ======================================================================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Process</h2>
+          <p class="section-desc">
+            A disciplined 5-stage workflow from initial audit to ongoing measurement.
+          </p>
+        </div>
+
+        <div class="process-track-horizontal">
+          <div class="process-node">
+            <span class="node-number">01</span>
+            <h3 class="node-title">Research</h3>
+            <p class="node-text">
+              I review your current website, rankings, and competitor gaps to pinpoint where you're losing potential clients.
+            </p>
+          </div>
+
+          <div class="process-node">
+            <span class="node-number">02</span>
+            <h3 class="node-title">Plan</h3>
+            <p class="node-text">
+              I map out the conversion hierarchy, write clear customer-focused text, and select priority search terms.
+            </p>
+          </div>
+
+          <div class="process-node">
+            <span class="node-number">03</span>
+            <h3 class="node-title">Build</h3>
+            <p class="node-text">
+              I build fast, responsive pages with clean code and share live preview links for your feedback.
+            </p>
+          </div>
+
+          <div class="process-node">
+            <span class="node-number">04</span>
+            <h3 class="node-title">Optimize</h3>
+            <p class="node-text">
+              I test performance across devices, ensuring sub-second load times and frictionless call/form interactions.
+            </p>
+          </div>
+
+          <div class="process-node">
+            <span class="node-number">05</span>
+            <h3 class="node-title">Measure</h3>
+            <p class="node-text">
+              I index pages with Google, track keyword ranking gains, and review verified lead submissions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ABOUT: EDITORIAL PRESENTATION (ALL "WE" REPLACED WITH "I")
+         ======================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">Direct collaboration with senior accountability.</p>
+        </div>
+
+        <div class="about-editorial-wrap">
+          <div class="about-avatar-box">
+            <img src="https://i.ibb.co/YF09PgGg/1758804697286.jpg" alt="Mohammed Sohail Sayyed" loading="lazy" />
+            <strong>Mohammed Sohail Sayyed</strong>
+            <span>Navi Mumbai, India · Remote Global</span>
+          </div>
+
+          <div class="about-editorial-text">
+            <p>
+              Hi, I'm Mohammed Sohail Sayyed. I am an independent digital marketing specialist and web consultant based in Navi Mumbai, India, working with clients worldwide.
+            </p>
+            <p>
+              I work directly with founders and business owners who want senior expertise without agency overhead or junior handoffs. Whether I'm writing website code, optimizing your Google rankings, or tuning ad campaigns, every step is handled directly by me with personal accountability.
+            </p>
+            <div class="about-tools-row">
+              <span class="tool-chip">Google Search Console</span>
+              <span class="tool-chip">Google Analytics 4</span>
+              <span class="tool-chip">Ahrefs &amp; SEMrush</span>
+              <span class="tool-chip">WordPress</span>
+              <span class="tool-chip">Webflow</span>
+              <span class="tool-chip">GoHighLevel</span>
+              <span class="tool-chip">Meta Ads</span>
+              <span class="tool-chip">Google Ads</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CONTACT: DIRECT CHANNELS & WORKING FORM
+         ======================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">
+            Whether you need a new website, better Google rankings, or reliable marketing help, I'm ready to help.
+          </p>
+        </div>
+
+        <div class="contact-split-wrap">
+          <div>
+            <p style="font-size: 0.925rem; color: var(--color-charcoal); line-height: 1.6;">
+              I reply to all messages within 24 hours. For an immediate discussion, schedule a 20-minute video call on my calendar.
+            </p>
+
+            <div class="contact-channels-list">
+              <a href="mailto:mdsohail6056@gmail.com" class="channel-item">
+                <div>
+                  <small>Email</small>
+                  <strong>mdsohail6056@gmail.com</strong>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/mohammed-sohail-sayyed" target="_blank" rel="noopener" class="channel-item">
+                <div>
+                  <small>LinkedIn</small>
+                  <strong>mohammed-sohail-sayyed ↗</strong>
+                </div>
+              </a>
+
+              <a href="https://calendar.app.google/uzH9KFj874kFUX9L9" target="_blank" rel="noopener" class="channel-item">
+                <div>
+                  <small>Calendar</small>
+                  <strong>Book a 20-Minute Call ↗</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-box">
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+              <div class="form-row-dual">
+                <div class="form-group-item">
+                  <label class="form-label-txt" for="senderName">Name *</label>
+                  <input type="text" id="senderName" class="form-field" required placeholder="John Smith" />
+                </div>
+                <div class="form-group-item">
+                  <label class="form-label-txt" for="senderEmail">Email *</label>
+                  <input type="email" id="senderEmail" class="form-field" required placeholder="john@example.com" />
+                </div>
+              </div>
+
+              <div class="form-group-item">
+                <label class="form-label-txt" for="senderService">Service *</label>
+                <select id="senderService" class="form-field" required>
+                  <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                  <option value="Website Design & Development">Website Design &amp; Development</option>
+                  <option value="PPC & Performance Advertising">PPC &amp; Performance Advertising</option>
+                  <option value="Social Media & Content Management">Social Media Management</option>
+                  <option value="Analytics & Performance Measurement">Analytics &amp; Tracking</option>
+                </select>
+              </div>
+
+              <div class="form-group-item">
+                <label class="form-label-txt" for="senderMessage">Project Details *</label>
+                <textarea id="senderMessage" rows="3" class="form-field" required placeholder="Briefly describe what you'd like to achieve..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitContactBtn">
+                <span>Send Message →</span>
+              </button>
+
+              <div id="contactStatusAlert" class="form-alert-msg" role="alert"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="closing-bar">
+          <div>© <span id="yearSpan"></span> Mohammed Sohail Sayyed. All rights reserved.</div>
+          <div>Navi Mumbai, India · Remote Global Work</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- ========================================================================
+       SCRIPTS
+       ======================================================================== -->
+  <script>
+    document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+    const scrollBar = document.getElementById('scrollProgress');
+    const bttBtn = document.getElementById('backToTop');
+    const headerEl = document.getElementById('siteHeader');
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      if (scrollBar) scrollBar.style.width = scrolled + '%';
+
+      if (winScroll > 300) {
+        bttBtn.classList.add('visible');
+      } else {
+        bttBtn.classList.remove('visible');
+      }
+
+      if (winScroll > 40) {
+        headerEl.style.borderBottomColor = '#B8AC95';
+      } else {
+        headerEl.style.borderBottomColor = '#D6CDBA';
+      }
+    });
+
+    bttBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Navigation Drawer
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+    if (mobileToggle && mobileDrawer) {
+      mobileToggle.addEventListener('click', () => {
+        const isOpen = mobileDrawer.classList.toggle('open');
+        mobileToggle.classList.toggle('open');
+        mobileToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      mobileNavItems.forEach(item => {
+        item.addEventListener('click', () => {
+          mobileDrawer.classList.remove('open');
+          mobileToggle.classList.remove('open');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // ==========================================================================
+    // SERVICES INTERACTIVE BROWSER DATA & LOGIC
+    // ==========================================================================
+    const servicesData = [
+      {
+        title: "Search Engine Optimization (SEO)",
+        desc: "I conduct technical site audits, map high-intent search queries, and optimize your local Google Business Profile to rank your high-value pages on Google Page 1.",
+        checklist: [
+          "Technical health & Core Web Vitals speed fixes",
+          "Commercial keyword & buyer search intent targeting",
+          "Local map pack & Google Business Profile rankings",
+          "Structured schema markup for rich search results"
+        ],
+        serviceName: "Search Engine Optimization (SEO)"
+      },
+      {
+        title: "Website Design & Development",
+        desc: "I design and build custom, modern websites that load in under a second on phones and computers, engineered from the ground up to turn visitors into client inquiries.",
+        checklist: [
+          "Mobile-first responsive design for all screen sizes",
+          "Sub-second loading speeds (Google Speed Score 90+)",
+          "Frictionless inquiry forms & direct call buttons",
+          "WordPress, Webflow, GoHighLevel, or custom code"
+        ],
+        serviceName: "Website Design & Development"
+      },
+      {
+        title: "Pay-Per-Click Advertising (PPC)",
+        desc: "I manage targeted Google Search and Meta ad campaigns focused on keeping cost-per-lead low while generating immediate buyer inquiries for your business.",
+        checklist: [
+          "Google Search intent bidding for ready buyers",
+          "Meta (Instagram & Facebook) lead generation funnels",
+          "Retargeting website visitors who didn't convert",
+          "Clear cost-per-acquisition reporting and optimization"
+        ],
+        serviceName: "PPC & Performance Advertising"
+      },
+      {
+        title: "Social Media Management",
+        desc: "I keep your social channels active, polished, and consistent with branded graphics, editorial copy, and regular engagement so your business stays top-of-mind.",
+        checklist: [
+          "Monthly content planning and publishing",
+          "Executive LinkedIn profile positioning",
+          "Branded graphic design & promotional video clips",
+          "Active community replies and direct outreach"
+        ],
+        serviceName: "Social Media & Content Management"
+      },
+      {
+        title: "Analytics & Conversion Tracking",
+        desc: "No guessing or vanity numbers. I set up simple Google Analytics 4 and Search Console tracking to measure real phone calls, form clicks, and inquiries.",
+        checklist: [
+          "GA4 event tracking and conversion goals",
+          "Google Search Console keyword monitoring",
+          "Clear monthly reports you can actually read",
+          "Tracking phone calls, WhatsApp, and form clicks"
+        ],
+        serviceName: "Analytics & Performance Measurement"
+      }
+    ];
+
+    const serviceButtons = document.querySelectorAll('.service-index-btn');
+    const spotlightTitle = document.getElementById('spotlightTitle');
+    const spotlightDesc = document.getElementById('spotlightDesc');
+    const spotlightChecklist = document.getElementById('spotlightChecklist');
+    const spotlightActionBtn = document.getElementById('spotlightActionBtn');
+
+    serviceButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.getAttribute('data-service-idx'), 10);
+        serviceButtons.forEach(b => {
+          const isActive = b === btn;
+          b.classList.toggle('active', isActive);
+          b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        const data = servicesData[idx];
+        if (data && spotlightTitle && spotlightDesc && spotlightChecklist) {
+          spotlightTitle.textContent = data.title;
+          spotlightDesc.textContent = data.desc;
+          spotlightChecklist.innerHTML = data.checklist.map(item => `<li>${item}</li>`).join('');
+          spotlightActionBtn.onclick = () => selectServiceForContact(data.serviceName);
+        }
+      });
+    });
+
+    // ==========================================================================
+    // CASE STUDY TABS
+    // ==========================================================================
+    (function initCaseStudyTabs() {
+      const tabButtons = document.querySelectorAll('.results-tab-btn');
+      const panels = document.querySelectorAll('.case-stage-panel');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tabIndex = btn.getAttribute('data-tab');
+
+          tabButtons.forEach(b => {
+            const isActive = b === btn;
+            b.classList.toggle('active', isActive);
+            b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          });
+
+          panels.forEach((p, i) => {
+            const isMatch = i === parseInt(tabIndex, 10);
+            p.classList.toggle('active', isMatch);
+          });
+        });
+      });
+    })();
+
+    // ==========================================================================
+    // SHOWCASE SLIDER
+    // ==========================================================================
+    (function initShowcaseSlider() {
+      const stage = document.getElementById('showcaseStage');
+      if (!stage) return;
+
+      const slides = stage.querySelectorAll('.showcase-slide');
+      const counter = document.getElementById('showcaseCounter');
+      const prevBtn = document.getElementById('prevSlideBtn');
+      const nextBtn = document.getElementById('nextSlideBtn');
+      const pills = document.querySelectorAll('.showcase-pill');
+      const total = slides.length;
+      let currentIndex = 0;
+
+      function renderSlide(index, isUser) {
+        if (index < 0) {
+          currentIndex = total - 1;
+        } else if (index >= total) {
+          currentIndex = 0;
+        } else {
+          currentIndex = index;
+        }
+
+        slides.forEach((s, idx) => {
+          const isActive = idx === currentIndex;
+          s.classList.toggle('active', isActive);
+          s.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+        });
+
+        if (counter) {
+          const displayIdx = String(currentIndex + 1).padStart(2, '0');
+          const displayTotal = String(total).padStart(2, '0');
+          counter.textContent = `${displayIdx} / ${displayTotal}`;
+        }
+
+        const pillsBar = document.getElementById('showcasePills');
+        pills.forEach((p, idx) => {
+          const isActive = idx === currentIndex;
+          p.classList.toggle('active', isActive);
+          p.setAttribute('aria-selected', isActive ? 'true' : 'false');
+
+          if (isActive && isUser && pillsBar) {
+            const pLeft = p.offsetLeft;
+            const pWidth = p.offsetWidth;
+            const barWidth = pillsBar.offsetWidth;
+            pillsBar.scrollTo({
+              left: pLeft - (barWidth / 2) + (pWidth / 2),
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', () => renderSlide(currentIndex - 1, true));
+      if (nextBtn) nextBtn.addEventListener('click', () => renderSlide(currentIndex + 1, true));
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const targetIndex = parseInt(pill.getAttribute('data-slide'), 10);
+          renderSlide(targetIndex, true);
+        });
+      });
+
+      renderSlide(0, false);
+    })();
+
+    // Quick select helper
+    function selectServiceForContact(serviceName) {
+      const selectEl = document.getElementById('senderService');
+      const contactSection = document.getElementById('contact');
+      if (selectEl) selectEl.value = serviceName;
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+        const msgEl = document.getElementById('senderMessage');
+        if (msgEl) {
+          msgEl.placeholder = `I am interested in ${serviceName}. Here is what I am looking to achieve:`;
+          msgEl.focus();
+        }
+      }
+    }
+
+    // Form submit
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('senderName').value.trim();
+      const email = document.getElementById('senderEmail').value.trim();
+      const service = document.getElementById('senderService').value;
+      const message = document.getElementById('senderMessage').value.trim();
+      const alertBox = document.getElementById('contactStatusAlert');
+      const submitBtn = document.getElementById('submitContactBtn');
+
+      if (!name || !email || !message) {
+        alertBox.className = 'form-alert-msg error';
+        alertBox.textContent = 'Please fill out all required fields.';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending...</span>';
+
+      setTimeout(() => {
+        alertBox.className = 'form-alert-msg success';
+        alertBox.innerHTML = `
+          <strong>Thank you, ${name}!</strong> Your message has been received. I will follow up directly to <strong>${email}</strong> within 24 hours.
+          <br>
+          <a href="mailto:mdsohail6056@gmail.com?subject=Inquiry:%20${encodeURIComponent(name)}%20(${encodeURIComponent(service)})&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nService: ' + service + '\n\nMessage:\n' + message)}" style="text-decoration: underline; color: #244638; font-weight: 700;">
+            Click here to open directly in your mail app →
+          </a>
+        `;
+        document.getElementById('contactForm').reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>Message Sent ✓</span>';
+      }, 500);
+    }
+
+    // Active Nav Highlight
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      let currentSection = '';
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        const height = sec.offsetHeight;
+        if (scrollY >= top && scrollY < top + height) {
+          currentSection = sec.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
